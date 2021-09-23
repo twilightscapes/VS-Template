@@ -13,6 +13,7 @@ const NotFound = () => (
       className="wrapper"
       style={{
         textAlign: "center",
+        minHeight:"100vh",
       }}
     >
       <header>
@@ -25,8 +26,8 @@ const NotFound = () => (
         textAlign:'center'
           }}
         />
-        <h1 className="neonText" style={{fontSize:'200%'}}>Well, Shit.</h1>
-        <p className="neonText" style={{fontSize:'150%'}} style={{margin:'2rem'}}>
+        <h1 className="headline1" style={{fontSize:'200%'}}>Well, Shit.</h1>
+        <p className="headline1" style={{fontSize:'150%'}} style={{margin:'2rem'}}>
           That wasn't supposed to happen.
         </p>
       </header>
@@ -41,6 +42,12 @@ const NotFound = () => (
       </Link></div>
 
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </Layout>
 )
 

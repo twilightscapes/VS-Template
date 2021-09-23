@@ -196,7 +196,7 @@ export function Footer() {
 <>
 
 
-    <footer className={footerStyle} style={{padding:'0 0', marginTop:'0',}}>
+    <footer className={footerStyle} style={{padding:'0 0', marginTop:'0', position:'relative'}}>
 
     <Consent />
 {/* <div style={{width:'50%', border:'1px groove', margin:'1rem auto'}}></div> */}
@@ -234,8 +234,19 @@ export function Footer() {
         Copyright &copy; {(new Date().getFullYear())} VidSock(s) - is NOT affiliated with YouTube in any way. </div>
         <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} /> */}
 
-<div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} &nbsp; – <a href={speedIt} target="_blank" rel="noreferrer">Yeah, we're FAST</a></div>
+<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
+
+<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem', position:'relative', right:'', top:'10px'}}>
 <Theme  style={{display:'flex', alignSelf:'center',}} />
+
+<br />
+<br />
+
+<a href="https://vidsock.com" target="_blank" rel="noreferrer">Web App by VidSock</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a></div>
+
+
+
+<br />
 <br />
       </nav>
    

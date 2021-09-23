@@ -22,7 +22,7 @@ const Consent = () => (
     
     buttonText="Accept"
 	buttonStyle={{justifyContent:'center', textAlign:'center', fontSize: "16px", fontWeight:'bold', borderRadius:'5px', color:'',   top:'10px',  position:'relative', margin:'0 0 0 0', padding:'.8rem 1rem', background:'transparent', border:'1px solid',
-    filter:'drop-shadow(1px 1px 10rem #fff)',
+    // filter:'drop-shadow(1px 1px 10rem #fff)',
     boxShadow:' 0px 1px 6px 1px black',
     backdropFilter: 'blur(10px)',
     textShadow: '1px 2px 2px rgba(0,0,0,.9)'
@@ -31,7 +31,7 @@ const Consent = () => (
     contentStyle={{margin:'0', padding:'0', border:'0px solid red'}}
 
     expires={364}
-    cookieName="Twilightscapes.com-site-pref-cookie"
+    cookieName="site-pref-cookie"
 >
 
 

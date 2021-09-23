@@ -37,6 +37,7 @@ export default function SignedUpPage() {
         flexDirection:'column',
         width:'80%',
         margin:'0 auto',
+        minHeight:'100vh'
       }}
     ><div className="spacer33"></div> 
       <AiTwotoneCamera
@@ -47,7 +48,7 @@ export default function SignedUpPage() {
           textAlign:'center'
         }}
       />
-      <h1 className="neonText" style={{fontSize:'200%'}}>Thank you for joining the newsletter!</h1>
+      <h1 className="headline1" style={{fontSize:'200%'}}>Thank you for following!</h1>
    
 
       <div className="spacer33"></div> 
