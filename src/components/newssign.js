@@ -40,7 +40,7 @@ const NewsletterPage = () => (
 
 <CustomBox style={{}}> 
 
-           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center', width:'100%'}}>
+           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'20vh auto 0 auto', justifySelf:'center', width:'100%'}}>
 <form
           className="news-form"
           action="/signedup/"
@@ -51,19 +51,19 @@ const NewsletterPage = () => (
 
 
 
-              <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div>
+              
 
           <input type="hidden" name="form-name" value="news" />
 
 <br />
 
             
-              <span className="txtshadow" style={{fontSize:'120%',}}><strong>The VidSocks NFT Platform is INVITE ONLY</strong></span><br />
+              <span className="txtshadow" style={{fontSize:'120%',}}><strong>Enter your email to follow</strong></span><br />
               
-              <span className="txtshadow" style={{fontSize:'85%'}}>Current NFT owners will be the only accounts created during initial launch phase<br /><br />Second Phase will open to invite only<br />Reserve Your Spot Below:</span><br /><br />
+              {/* <span className="txtshadow" style={{fontSize:'85%'}}>Current NFT owners will be the only accounts created during initial launch phase<br /><br />Second Phase will open to invite only<br />Reserve Your Spot Below:</span><br /><br /> */}
 
              <div className="signbox" style={{display:'flex',}}>
-
+             
                <label style={{color:'#fff'}} htmlFor="email">
                  <input type="email" name="email" required={true}
                       placeholder="your@email.com"
@@ -91,7 +91,7 @@ const NewsletterPage = () => (
               type="submit"
               style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.5vw, 1.5rem)', whiteSpace:'nowrap'}}
             >
-              Save My Spot{" "}
+              Follow{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>

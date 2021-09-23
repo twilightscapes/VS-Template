@@ -112,12 +112,14 @@ const CustomBox = styled.div`
       url={FinalUrl}
       width='100%'
       height='100%'
-      shownfo={false}
-      controls={false}
-      // autoplay={true}
+      config={{
+        youtube: {
+          playerVars: { showinfo:1, controls:1, mute:1, }
+        },
+      }}
       playing
       color="white"
-      muted={true}
+
       // playIcon={<button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
         
 

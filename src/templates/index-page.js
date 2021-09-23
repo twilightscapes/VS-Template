@@ -6,6 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 import { GoArrowDown } from "react-icons/go"
+import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -171,13 +172,9 @@ const YouTube = frontmatter.youtuber
           url={Url}
           width="100%"
           height="100%"
-          autoplay={true}
-          background={true}
           loop
           playing
           playsinline
-          muted={true}
-          showPortrait
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 
@@ -310,13 +307,13 @@ const YouTube = frontmatter.youtuber
 
 <br />
 
-<section style={{ display:'none',}}>
+<section style={{ display:'',}}>
   <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek " style={{padding:'0 2rem',color:'#fff', textShadow:'3px 3px 0 #000'}}>
+      <div className="flexcheek " style={{padding:'0 2rem',}}>
 
 
-          <h1 className="title1 neonText1">{frontmatter.title}</h1>
+          <h1 className="title1">{frontmatter.title}</h1>
           <p
             className="tagline1"
             sx={{
@@ -327,7 +324,7 @@ const YouTube = frontmatter.youtuber
           </p>
 
           <div
-          style={{color:'#fff', textShadow:'1px 1px 0 #333'}}
+          style={{}}
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
           />
@@ -352,9 +349,7 @@ const YouTube = frontmatter.youtuber
             
           </Link>
 
-          <div style={{display:'flex', flexDirection:'', width:'90%', justifySelf:'',  justifyContent:'space-between', margin:'0 auto', fontSize:'3rem', opacity:'.6'}}>
-            <GoArrowDown />  <GoArrowDown /> <GoArrowDown />
-            </div>
+         
 
 
 {/* <AnchorLink 
@@ -386,7 +381,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'100%', overflow:''}}>
+ <div className="flexcheek" style={{position:'relative', height:'100%', overflow:'', marginBottom:'2rem'}}>
  
  
 
@@ -395,31 +390,28 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
-           {/* {SecondaryImage ? (
+           {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'90vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
-          )} */}
+          )}
 {/* </div> */}
 
 
 
-{/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} > */}
+{/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} >
 <div style={{position:'relative', top:'0px', paddingRight:'', border:'0px solid yellow', zIndex:'0'}}>
   <h2
-  className="neonText normal txtshadow-header hit-the-floor"
+  className="title1 txtshadow-header"
   style={{
-    color: '#fff',
-    fontSize: '3rem',
+
+
    position: 'relative',
-//            top: '100px',
-//            right: '1%',
-//            backgroundColor: '#ff0000',
     textAlign: 'center', 
     float: 'none',
     margin:'1rem 0 0 0',
@@ -430,7 +422,7 @@ Only Available<br />
 Through NFT
 </h2>
 </div>
-{/* </ScrollAnimation> */}
+</ScrollAnimation> */}
 
 
 {/* <ScrollAnimation animateIn="bounceInRight" delay={400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red', zIndex:'0'}}>
@@ -469,13 +461,15 @@ Through NFT
 </h2>
 </ScrollAnimation> */}
 
-{/* <ScrollAnimation className="signup" animateIn="" delay={550} initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'0', textAlign:'center', display:'block', borderRadius:'12px'}}> */}
-<div style={{position:'relative', justifyContent:'center', width:'', zIndex:'0', textAlign:'center', display:'block', borderRadius:'12px'}}>
+
+
+<ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'', display:'flex', justifyContent:'center'}}>
+<div style={{position:'', bottom:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'', borderRadius:'12px'}}>
   <Newsignup />
   </div>
-{/* </ScrollAnimation> */}
+</ScrollAnimation>
 
-<div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div>
+{/* <div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div> */}
 </div>
 
       
@@ -494,7 +488,7 @@ Through NFT
 
 
 
-<a name="nfts" id="nfts"></a>
+<a name="posts" id="posts"></a>
 <div id="scooch">
         <BlogListHome data={posts} />
 

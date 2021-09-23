@@ -9,6 +9,11 @@ import * as React from "react"
 //   <StoreProvider>{element}</StoreProvider>
 // )
 
+export const onInitialClientRender = () => {
+  setTimeout(function() {
+      document.getElementById("___loader").style.display = "none"
+  }, 1000)
+}
 
 
 export const onServiceWorkerUpdateReady = () => {
@@ -21,4 +26,8 @@ export const onServiceWorkerUpdateReady = () => {
     window.location.reload()
   }
 }
+
+
+
+
 

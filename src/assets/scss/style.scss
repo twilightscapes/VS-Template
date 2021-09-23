@@ -391,11 +391,12 @@ article img {
   // font-size: 16px;
   // line-height: 1;
   text-decoration: none;
-  background: linear-gradient(180deg, rgb(34, 26, 32) 1%, #111 99%);
+  background: linear-gradient(180deg, rgb(41, 38, 40) 1%, #111 99%);
   align-self: center;
   padding: var(--space-sm) var(--space-xl);
   border-radius: var(--radius-md);
-  border:1px solid rgb(104, 87, 102);
+  // border:1px solid rgb(104, 87, 102);
+  border:1px solid #ccc;
   font-weight: var(--bold);
   align-items: center;
   height: var(--size-input);

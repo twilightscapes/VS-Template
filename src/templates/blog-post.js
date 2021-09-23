@@ -221,7 +221,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
          
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd }
+                  playerVars: { showinfo:0, start:YouTubeStart, end:YouTubeEnd }
                 },
               }}
               loop
@@ -425,7 +425,7 @@ const { iconimage } = useSiteMetadata()
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 </div>

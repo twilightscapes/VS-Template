@@ -1,17 +1,17 @@
 {
   "meta": {
-    "iconimage": "/assets/tw-logo-white.svg",
+    "iconimage": "/assets/vidsock-logo.svg",
     "favicon32x32": "/assets/favicon-32x32.png",
     "favicon16x16": "/assets/favicon-16x16.png",
-    "companyname": "Crude Addiction",
-    "siteUrl": "https://crude-addiction.netlify.app/",
-    "twitterUsername": "toddlambert",
-    "titleDefault": "Crude Addiction",
+    "companyname": "VidSock",
+    "siteUrl": "https://vidsock.com/",
+    "twitterUsername": "vidsock",
+    "titleDefault": "VidSock",
     "icon192": "/assets/icon-192x192.png",
     "titleTemplate": "%s",
-    "title": "Let us be your",
+    "title": "VidSock",
     "image": "/assets/default-og-image.jpg",
-    "description": "Crude Addiction is where its at.",
+    "description": "VidSock - NextGen NFT Platform",
     "icon512": "/assets/icon-512x512.png"
   },
   "ga": "G-FRM0PVXTRX"

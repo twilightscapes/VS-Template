@@ -7,11 +7,11 @@ featuredImage: /assets/crude-addiction-header.jpg
 secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
 svgImage: /assets/crude-addiction.svg
-youtuber: iHxmNzMfDj4
+youtuber: ""
 cta:
-  ctaText: See the VidSocks
-  ctaLink: /nfts/
-youtubeend: "33"
+  ctaText: "See the Posts"
+  ctaLink: "/#posts"
+youtubeend: "0"
 youtubecontrols: "0"
 youtubemute: "1"
 svgzindex: "0"

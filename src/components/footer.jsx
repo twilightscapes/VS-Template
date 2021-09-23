@@ -37,9 +37,12 @@ import {
 
 
 const sIcons = Icons.socialIcons.map((icons, index) => {
-  
-  return (
 
+
+
+
+  return (
+<>
 
     <div key={"social icons" + index}>
       {icons.icon === "facebook" ? (
@@ -155,7 +158,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
         ""
       )}
     </div>
-
+</>
   )
 })
 
@@ -179,6 +182,16 @@ export function Footer() {
 
   const { companyname } = useSiteMetadata()
  
+
+
+
+
+
+
+
+
+
+
   return (
 <>
 
@@ -192,20 +205,26 @@ export function Footer() {
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'4px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Us - We &nbsp;<FaHeart />&nbsp;feedback!</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'4px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Us - We&nbsp;<FaHeart />&nbsp;feedback!</Link>
 
  <div >
-        {/* <Social /> */}
+     
 
-        <div className="social-icons" style={{textAlign:'center', justifyContent:'center', margin:'3rem 5px'}}>
-  <div className="socialtext" style={{fontSize:'14px'}}>We&apos;re<br />Social</div>
-        {sIcons}
+        { !sIcons ? (
+    ""
+
+  ) : (
+    <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', justifyContent:'center', alignItems:'center'}}>
+       <div className="socialtext" style={{fontSize:'14px',}}>We&apos;re <br />Social</div> {sIcons}
         </div>
+  )}
+  
+        
         </div>
 
         
       </div>
-      <nav className={links} aria-label="footer">
+      <nav className="footerlinks" aria-label="footer">
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
   
       {/* <Page /> */}
@@ -215,7 +234,9 @@ export function Footer() {
         Copyright &copy; {(new Date().getFullYear())} VidSock(s) - is NOT affiliated with YouTube in any way. </div>
         <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} /> */}
 
-<div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} - site by<a href="https://vidsock.com" rel="noreferrer" target="_blank">VidSocks</a> | <a href={speedIt} target="_blank" rel="noreferrer">SpeedTest</a></div>
+<div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} &nbsp; – <a href={speedIt} target="_blank" rel="noreferrer">Yeah, we're FAST</a></div>
+<Theme  style={{display:'flex', alignSelf:'center',}} />
+<br />
       </nav>
    
     </footer>

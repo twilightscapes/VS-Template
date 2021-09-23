@@ -15,7 +15,7 @@ youtubersuggestion2: ""
 youtubersuggestion3: ""
 comments: ""
 shareable: ""
-isnftforsale: "1"
+isnftforsale: ""
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
@@ -25,12 +25,9 @@ youtubeautostart: "1"
 svgImage: /assets/null.svg
 svgzindex: ""
 ---
-Watching shadows can be a fun pastime on a full-moon night such as this. As the moon reached it's peak int he sky, I noticed the shadows were making for a great foreground element other than the car. 
+<h2 style="font-size:150%">What are VidSocks?</h2>
+VidSocks are layered multimedia (including animation, cutouts, scenes, and video) crafted together to give the viewer a whole new sensory experience.
 
-Upon shooting over the course of a couple of hours I returned with a bunch of cool images. But while editing, I noticed that the shadows moved during the course of my shooting time, and when viewing the series quickly, the shadows looked like hands reaching out towards the car. 
+Each VidSock is uniquely created by the artist and then delivered to the world for their art to be altered and changed by its viewers thus making each VidSock truly dynamic.
 
-So, it seemed appropriate to take it to the next level and add some animation to illustrate better what I saw from that night. 
-
-I hope you like it.
-
-<h2 class="neonText" style="text-align: center;">BUY THE NFT!</h2>
+With each winning bid, you not only get to take home your new VidSock, but you will also get your very own copy of the VidSock NFT Marketing Platform™ to make and market your own VidSocks.

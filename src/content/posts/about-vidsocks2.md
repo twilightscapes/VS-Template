@@ -25,15 +25,30 @@ youtubeautostart: "1"
 svgImage: /assets/null.svg
 svgzindex: "0"
 ---
-Watching shadows can be a fun pastime on a full-moon night such as this. As the moon reached it's peak in the sky, I noticed the shadows were making for a great foreground element other than ther car. 
 
-Upon shooting over the course of a couple of hours I returned with a bunch of cool images. But while editing, I noticed that the shadows moved during the course of my shooting time, and when viewing the series quickly, the shadows looked like hands reaching out towards the car. 
+<h2 style="font-size:150%">About the VidSock Platform</h2>
 
-So, it seemed appropriate to take it to the next level and add some animation to illustrate better what I saw from that night. 
+VidSock is the World's FIRST and ONLY, 100% dedicated artist marketing platform!
 
-I hope you like it.
+Why spend all those countless hours and tons of effort in making a name for yourself, but it's on someone else's platform?
 
-<h2 class="neonText" style="text-align: center;">BUY THE NFT!</h2>
-<nft-card style="border:none;border-radius:12px" contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183186230620717057"> </nft-card>
+Market all of your NFTs, portfolio pieces, blog posts, video posts, from one easy to use website that you own forever - for free!
+
+Point your own domain name at it and you have a complete web NFT portfolio marketing solution.
 
 
+<h2 style="font-size:150%">Built for Artists by an Artist.</h2>
+VidSocks are maximized for your artwork. Moving everything out of the way and putting your work front and center.
+
+Support for all of your projects - whether you want to market your OpenSea NFTs, embed your Foundation page, or show your artwork off in the best fashion, VidSocks make it copy and paste EASY.
+
+
+
+<h2 style="font-size:150%">Built Right In All The Right Spots</h2>
+A complete system including video blog with unlimited posts, and customizable home page, about and contact pages with integrated contact form.
+
+Built right in the right places. The site is built from the ground up to utelize modern technologies and yet do so in the correct way and one that Google likes.
+
+Top Scores out of the box - Accessibility, SEO, Best Practices, oh.. and its a full-blown Web App too!
+
+Automated backups with intant rollbacks to any version. Site is automatically load-balanced and served from a Global Edge Network so your site is lightning fast no matter where your visitors come from.
