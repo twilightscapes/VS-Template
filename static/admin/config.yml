@@ -240,6 +240,7 @@ collections:
             name: comments
             widget: string
             hint: "Add your CommentBox ID – should look like xxxxxxxxxxxxxxxx-proj"
+            required: false
           - label: "Google Analytics"
             name: ga
             widget: string
