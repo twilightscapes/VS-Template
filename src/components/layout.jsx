@@ -69,6 +69,12 @@ export function Layout({ children }) {
 </Link>
  </li>
  
+ <li className="carto" style={{textAlign:'center'}}>
+ <Link className="navbar-item txtshadow" to="/contact/">
+Contact
+</Link>
+</li>
+
 
  <li className="carto" style={{textAlign:'center'}}>
  <Link className="navbar-item txtshadow" to="/about/">
@@ -77,11 +83,12 @@ About
 </li>
 
 
- <li className="carto" style={{textAlign:'center'}}>
- <Link className="navbar-item txtshadow" to="/contact/">
-Contact
-</Link>
-</li>
+<li className="carto" style={{textAlign:'center'}}>
+            <Link className="navbar-item txtshadow" to="/archive/">
+           Latest
+           </Link>
+           </li>
+
 
     </ul>
 
