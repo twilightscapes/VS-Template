@@ -1,14 +1,14 @@
 ---
 slug: /
 tagline: This is an example of a VidSock site
-featuredImage: /assets/crude-addiction-header.jpg
+featuredImage: /assets/Experiences-Header-8.jpg
 secondaryImage: /assets/transparent.png
-underlayImage: /assets/transparent.png
+underlayImage: /assets/PillowTalkBG.png
 showInfo: ""
-youtuber: ""
+youtuber: "SD0EKkyuakY"
 youtubeautostart: "1"
 title: Welcome to VidSock!
-svgImage: /assets/crude-addiction.svg
+svgImage: /assets/lindell.svg
 showPosts: true
 cta:
   ctaText: See the Posts
