@@ -160,6 +160,10 @@ const HomePage = ({ data }) => {
   else{
     <AddSvg />
   }
+
+
+
+  
 function AddSvg(){
   const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
   return (
@@ -252,11 +256,7 @@ const YouTube = frontmatter.youtuber
       />
       
       
-      if(navigator.standalone) {
-    "Thanks for using our PWA!"
-} else {
-    "Please consider downloading our PWA."
-}
+
 
 
 
@@ -295,6 +295,15 @@ const YouTube = frontmatter.youtuber
           )}
 
 
+
+
+
+
+{/* if(navigator.standalone) {
+    "Thanks for using our PWA!"
+} else {
+    "Please consider downloading our PWA."
+} */}
 
 
 
