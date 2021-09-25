@@ -1,22 +1,22 @@
 ---
-template: index-page
 slug: /
-title: Welcome to VidSock!
 tagline: This is an example of a VidSock site
 featuredImage: /assets/transparent.png
 secondaryImage: /assets/night316.jpg
 underlayImage: /assets/swd-foreground.png
-svgImage: /assets/campfire.svg
-showFeature: "1"
 showInfo: "1"
-showPosts: "1"
-youtuber: "1kIihY252eE"
-youtubecontrols: ""
+youtuber: 1kIihY252eE
 youtubeautostart: "1"
+title: Welcome to VidSock!
+svgImage: /assets/campfire.svg
+showPosts: false
 cta:
-  ctaText: "See the Posts"
-  ctaLink: "/#posts"
+  ctaText: See the Posts
+  ctaLink: /#posts
 youtubeend: ""
+showFeature: false
+youtubecontrols: ""
+template: index-page
 youtubemute: "1"
 svgzindex: ""
 youtubestart: ""
