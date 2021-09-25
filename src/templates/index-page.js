@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
@@ -137,7 +137,7 @@ const HomePage = ({ data }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
-    const { iconimage } = useSiteMetadata()
+    // const { iconimage } = useSiteMetadata()
 
 
     const { siteUrl } = useSiteMetadata()
@@ -253,9 +253,9 @@ const YouTube = frontmatter.youtuber
       
       
       if(navigator.standalone) {
-    alert('Thanks for using our PWA!')
+    "Thanks for using our PWA!"
 } else {
-    alert('Please consider downloading our PWA.')
+    "Please consider downloading our PWA."
 }
 
 
