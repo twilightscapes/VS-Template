@@ -35,7 +35,6 @@ import {
 
 
 
-
 const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
@@ -184,7 +183,7 @@ export function Footer() {
  
 
 
-
+  const { showfooter } = useSiteMetadata()
 
 
 
@@ -193,6 +192,10 @@ export function Footer() {
 
 
   return (
+
+
+    showfooter ? (
+  
 
 
 
@@ -244,6 +247,13 @@ export function Footer() {
       </nav>
    
     </footer>
+
+    ) : (
+      ""
+    )
+
+
+
     
   )
 }

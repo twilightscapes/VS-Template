@@ -36,6 +36,7 @@ export const pageQuery = graphql`
         twitterUsername
         companyname
         postcount
+        showfooter
       }
 
     }
@@ -48,6 +49,9 @@ export const pageQuery = graphql`
         slug
         title
         description
+        showFeature
+        showPosts
+        showInfo
         youtuber
         youtubestart
         youtubeend
@@ -118,7 +122,7 @@ export const pageQuery = graphql`
 
 
 const HomePage = ({ data }) => {
-  const { postcount } = useSiteMetadata()
+  // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
   const Image = frontmatter.featuredImage
@@ -144,6 +148,9 @@ const HomePage = ({ data }) => {
     const YouTubeControls = frontmatter.youtubecontrols
     const YouTubeAutostart = frontmatter.youtubeautostart
 
+    const ShowFeature = frontmatter.showFeature
+    const ShowInfo = frontmatter.showInfo
+    const ShowPosts = frontmatter.showPosts
 
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
@@ -249,6 +256,14 @@ const YouTube = frontmatter.youtuber
 
         <div name="container21" className="container21" style={{height:'',}}>
 
+
+{/* show feature */}
+        {ShowFeature ? (
+            
+       
+          
+
+
         
 <section style={{ display:'',}}>
   <article>
@@ -321,11 +336,21 @@ const YouTube = frontmatter.youtuber
   </article>
 </section>
 
+) : (
+  ""
+)}
+{/* end show feature */}
 
 
 
 
 <br />
+
+{/* end show Info */}
+{ShowInfo ? (
+            
+       
+
 
 <section style={{ display:'',}}>
   <article>
@@ -506,8 +531,14 @@ Through NFT
 </article>
 </section>
 
+) : (
+  ""
+)}
+{/* end show Info */}
 
 
+{/* end show Posts */}
+{ShowPosts ? (
 
 <div id="posts" name="posts">
         <BlogListHome data={posts} />
@@ -520,11 +551,15 @@ Through NFT
 
    </div>
 
-   </div>{/* end scooch */}
+  
+
+   ) : (
+    ""
+  )}
+{/* end show Posts */}
 
 
-
-
+ </div>{/* end scooch */}
 
       
       

@@ -48,18 +48,19 @@ collections:
         }
       - { label: "SEO Description", name: "description", widget: "text" }
       - { label: "YouTube Url", name: "youtuber", widget: "string", required: false }
-      - { label: "YouTube Start", name: "youtubestart", widget: "string", hint: "This is measured in seconds - 32 would start the video at the 32-second mark", required: false }
-      - { label: "YouTube End", name: "youtubeend", widget: "string", hint: "This is measured in seconds - 102 would end the video at the 1-min  and 42-second mark", required: false }
+      - { label: "YouTube AutoPlay", name: "youtubeautoplay", widget: "boolean", default: "false", required: false }
       - { label: "YouTube Mute", name: "youtubemute", widget: "boolean", default: "true", required: false }
       - { label: "YouTube Show Controls", name: "youtubecontrols", widget: "boolean", default: "false", required: false }
-      - { label: "YouTube - Show Original?", name: "youtubeshoworiginal", widget: "boolean", default: "true", required: false }
+      - { label: "YouTube Start", name: "youtubestart", widget: "string", hint: "This is measured in seconds - 32 would start the video at the 32-second mark", required: false }
+      - { label: "YouTube End", name: "youtubeend", widget: "string", hint: "This is measured in seconds - 102 would end the video at the 1-min  and 42-second mark", required: false }
+      - { label: "YouTube - Show Original?", name: "youtubeshoworiginal", widget: "boolean", hint: "It's nice manners when using a video, you should link to the original", default: "true", required: false }
       - { label: "YouTube - Suggestion 1", name: "youtubersuggestion1", widget: "string", required: false }
       - { label: "YouTube - Suggestion 2", name: "youtubersuggestion2", widget: "string", required: false }
       - { label: "YouTube - Suggestion 3", name: "youtubersuggestion3", widget: "string", required: false }
       - { label: "Make Comments Available?", name: "comments", widget: "boolean", default: "true", required: false }
       - { label: "Make Post Shareable?", name: "shareable", widget: "boolean", default: "true", required: false }
-      - { label: "Is this an NFT?", name: "isnftforsale", widget: "boolean", default: "false", required: false }
-      - { label: "Paste OpenSea or Foundation Url", name: "nftlink", widget: "string", required: false }
+      - { label: "Is this an NFT?", name: "isnftforsale", widget: "boolean", default: "false", hint: "If yes, the post will show Artist Notes and other NFT related items", required: false }
+      - { label: "Paste OpenSea or Foundation Url", name: "nftlink", widget: "string", hint: "Paste your OpenSea or Foundation link - will be put in iframe", required: false }
       - { label: "For NFT DROP - enter drop time", name: "nftdrop", widget: "datetime", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm",format: "YYYY-MM-DDTHH:mm:ss", required: false }
       - { label: "Paste OpenSea or Foundation Url", name: "nftredeem", widget: "string", required: false }
 
@@ -69,6 +70,7 @@ collections:
           label: "Featured Image",
           name: "featuredImage",
           widget: "image",
+          hint: "The primary image used for all social media, blog previews and the feature image at the top of the post",
           required: false,
           tagname: "",
         }
@@ -76,6 +78,7 @@ collections:
           label: "Underlay Image",
           name: "underlayImage",
           widget: "image",
+          hint: "This is used to put a transparent png over the video but under the animation layer",
           required: false,
           tagname: "",
         }
@@ -83,6 +86,7 @@ collections:
           label: "SVG",
           name: "svgImage",
           widget: "image",
+          hint: "This is the animation layer where your animated or static SVG image goes - it is on the top of the stack",
           required: false,
           tagname: "",
         }
@@ -113,10 +117,13 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
-          - { label: "Secondary Image", name: "secondaryImage", widget: "image", required: false }
+          - { label: "Secondary Image", name: "secondaryImage", widget: "image", hint: "this image is used for the background on the homepage", required: false }
           - { label: "Underlay Image", name: "underlayImage", widget: "image", required: false }
           - { label: "SVG Image", name: "svgImage", widget: "image", required: false}
           - { label: "SVG Z-Index", name: "svgzindex", widget: "string" }
+          - { label: "Show Feature", name: "showFeature", widget: "boolean" }
+          - { label: "Show Info", name: "showInfo", widget: "boolean" }
+          - { label: "Show Posts", name: "showPosts", widget: "boolean" }
           - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
           - { label: "Body", name: "body", widget: "markdown" }
           - label: "CTA"
@@ -225,6 +232,10 @@ collections:
                 name: companyname
                 label: Company Name or Site Name
                 required: true
+              - widget: boolean
+                name: showfooter
+                label: Show the Footer
+                required: false
           - label: "Commenting – Go to: https://commentbox.io - sign up for free account "
             name: comments
             widget: string

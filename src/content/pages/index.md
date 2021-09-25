@@ -7,6 +7,9 @@ featuredImage: /assets/transparent.png
 secondaryImage: /assets/night316.jpg
 underlayImage: /assets/swd-foreground.png
 svgImage: /assets/campfire.svg
+showFeature: "1"
+showInfo: "1"
+showPosts: "1"
 youtuber: "1kIihY252eE"
 youtubecontrols: ""
 youtubeautostart: "1"
