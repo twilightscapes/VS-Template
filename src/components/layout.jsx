@@ -84,7 +84,7 @@ About
 
 
 <li className="carto" style={{textAlign:'center'}}>
-            <Link className="navbar-item txtshadow" to="/archive/">
+            <Link className="navbar-item txtshadow" to="/posts/">
            Latest
            </Link>
            </li>

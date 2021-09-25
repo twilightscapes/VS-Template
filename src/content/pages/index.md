@@ -4,17 +4,17 @@ tagline: This is an example of a VidSock site
 featuredImage: /assets/transparent.png
 secondaryImage: /assets/night316.jpg
 underlayImage: /assets/swd-foreground.png
-showInfo: "1"
+showInfo: "true"
 youtuber: 1kIihY252eE
 youtubeautostart: "1"
 title: Welcome to VidSock!
 svgImage: /assets/campfire.svg
-showPosts: false
+showPosts: true
 cta:
   ctaText: See the Posts
   ctaLink: /#posts
 youtubeend: ""
-showFeature: false
+showFeature: true
 youtubecontrols: ""
 template: index-page
 youtubemute: "1"

@@ -346,13 +346,13 @@ const YouTube = frontmatter.youtuber
 
 <br />
 
-{/* end show Info */}
+{/* show Info */}
 {ShowInfo ? (
             
        
 
 
-<section style={{ display:'',}}>
+<section style={{ display:'', height:'', overflow:''}}>
   <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
@@ -440,7 +440,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'80vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
@@ -544,7 +544,7 @@ Through NFT
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>
-  <Link to="/archive/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+  <Link to="/posts/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
     View More <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
     </section>

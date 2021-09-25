@@ -12,7 +12,7 @@
     "titleTemplate": "%s",
     "comments": "5732401321869312-proj",
     "title": "VidSock",
-    "showfooter": false,
+    "showfooter": true,
     "image": "/assets/default-og-image.jpg",
     "description": "VidSock - NextGen NFT Platform",
     "icon512": "/assets/icon-512x512.png"
