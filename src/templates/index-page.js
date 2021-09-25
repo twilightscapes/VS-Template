@@ -252,6 +252,12 @@ const YouTube = frontmatter.youtuber
       />
       
       
+      if(navigator.standalone) {
+    alert('Thanks for using our PWA!')
+} else {
+    alert('Please consider downloading our PWA.')
+}
+
 
 
         <div name="container21" className="container21" style={{height:'',}}>
