@@ -1,21 +1,22 @@
 ---
 template: index-page
 slug: /
-title: Welcome to Crude Addiction!
-tagline: Crude Addiction is an example of a VidSock site
-featuredImage: /assets/crude-addiction-header.jpg
-secondaryImage: /assets/transparent.png
-underlayImage: /assets/transparent.png
-svgImage: /assets/crude-addiction.svg
-youtuber: ""
+title: Welcome to VidSock!
+tagline: This is an example of a VidSock site
+featuredImage: /assets/transparent.png
+secondaryImage: /assets/night316.jpg
+underlayImage: /assets/swd-foreground.png
+svgImage: /assets/campfire.svg
+youtuber: "1kIihY252eE"
+youtubecontrols: ""
+youtubeautostart: "1"
 cta:
   ctaText: "See the Posts"
   ctaLink: "/#posts"
-youtubeend: "0"
-youtubecontrols: "0"
+youtubeend: ""
 youtubemute: "1"
-svgzindex: "0"
-youtubestart: "0"
+svgzindex: ""
+youtubestart: ""
 ---
 Each VidSock is uniquely created by the artist and then delivered to the world for their art to be altered and changed by its viewers thus making each VidSock truly dynamic.
 

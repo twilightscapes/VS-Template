@@ -1,3 +1,5 @@
+// import { useSiteMetadata } from "../hooks/use-site-metadata"
+
 const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 

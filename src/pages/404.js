@@ -27,7 +27,7 @@ const NotFound = () => (
           }}
         />
         <h1 className="headline1" style={{fontSize:'200%'}}>Well, Shit.</h1>
-        <p className="headline1" style={{fontSize:'150%'}} style={{margin:'2rem'}}>
+        <p className="headline1" style={{fontSize:'150%', margin:'2rem'}}>
           That wasn't supposed to happen.
         </p>
       </header>

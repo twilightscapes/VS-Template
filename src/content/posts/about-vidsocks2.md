@@ -5,8 +5,8 @@ slug: /VidSockPlatform
 date: 2021-08-15 10:43
 description: Learn More About The VidSock Platform
 youtuber: ""
-youtubestart: "0"
-youtubeend: "0"
+youtubestart: ""
+youtubeend: ""
 youtubemute: "1"
 youtubecontrols: "0"
 youtubeshoworiginal: ""
@@ -23,7 +23,7 @@ featuredImage: /assets/vidsock-explain2.jpg
 underlayImage: /assets/transparent.png
 youtubeautostart: "1"
 svgImage: /assets/null.svg
-svgzindex: "0"
+svgzindex: ""
 ---
 
 <h2 style="font-size:150%">About the VidSock Platform</h2>

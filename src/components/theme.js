@@ -6,7 +6,7 @@ import { FiMoon, FiSun } from "react-icons/fi"
 const Theme = () => {
   const [colorMode, setColorMode] = useColorMode()
   return (
-    <div className="carto" sx={themeStyles.modeOption}>
+    <div sx={themeStyles.modeOption}>
       <button
         onClick={e => {
           setColorMode(colorMode === "default" ? "dark" : "default")

@@ -42,13 +42,7 @@ module.exports = {
     },
   },
 
-  {
-    resolve: "gatsby-plugin-anchor-links",
-    options: {
-      offset: -100,
-      duration: 2000,
-    }
-  },
+
 
     {
       resolve: "gatsby-plugin-react-svg",

@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import * as React from "react"
+// import * as React from "react"
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
-import { GoArrowDown } from "react-icons/go"
+// import { GoArrowDown } from "react-icons/go"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
@@ -21,8 +21,11 @@ const CustomBox = styled.div`
 
 `
 
+
+
 export const pageQuery = graphql`
-  query HomeQuery($id: String!) {
+  query HomeQuery($id: String!, $limit: Int ) {
+    
     site {
       siteMetadata {
         title
@@ -32,7 +35,9 @@ export const pageQuery = graphql`
         image
         twitterUsername
         companyname
+        postcount
       }
+
     }
     markdownRemark(id: { eq: $id }) {
       id
@@ -48,6 +53,7 @@ export const pageQuery = graphql`
         youtubeend
         youtubemute
         youtubecontrols
+        youtubeautostart
         svgzindex
         featuredImage {
           publicURL
@@ -76,13 +82,13 @@ export const pageQuery = graphql`
     }
 
 
-
-
+ 
+    
 
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 10
+      limit: $limit
     ) {
       edges {
         node {
@@ -93,6 +99,7 @@ export const pageQuery = graphql`
             slug
             title
             nftdrop
+  
             
             featuredImage {
               publicURL
@@ -109,7 +116,9 @@ export const pageQuery = graphql`
 
 
 
+
 const HomePage = ({ data }) => {
+  const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
   const Image = frontmatter.featuredImage
@@ -129,7 +138,11 @@ const HomePage = ({ data }) => {
 
     const { siteUrl } = useSiteMetadata()
 
-
+    const YouTubeStart = frontmatter.youtubestart
+    const YouTubeEnd = frontmatter.youtubeend
+    const YouTubeMute = frontmatter.youtubemute
+    const YouTubeControls = frontmatter.youtubecontrols
+    const YouTubeAutostart = frontmatter.youtubeautostart
 
 
   const Svg = frontmatter.svgImage
@@ -164,36 +177,43 @@ const YouTube = frontmatter.youtuber
 
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
- <>
-
       <ReactPlayer
-        id="mobilePlayer"
-          className='react-player1'
-          url={Url}
-          width="100%"
-          height="100%"
-          loop
-          playing
-          playsinline
-          playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          
-
-          <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-  <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div>
+      className='react-player66'
+      url={Url}
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-  <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-          </div>
-          </button>}
-            light="../assets/transparent.png"
-          />
+      // url={[
+      //   iframeUrl,
+      //   YoutuberSuggestion1,
+      //   YoutuberSuggestion2,
+      //   YoutuberSuggestion3
+      // ]}
+      width="100%"
+      height="100%"
+ 
+      config={{
+        youtube: {
+          playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+        },
+      }}
+      loop
+      playing
+      playsinline
+      playIcon={
+        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 
+    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
+      
 
-          </>
+      <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+<img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
+  
+      <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      </div>
+      </button>}
+        light="../assets/transparent.png"
+      />
     )
   }
 
@@ -227,13 +247,13 @@ const YouTube = frontmatter.youtuber
       
 
 
-        <div name="container2" className="container2" style={{height:'90vh',}}>
+        <div name="container21" className="container21" style={{height:'',}}>
 
         
-<section style={{ display:'none',}}>
+<section style={{ display:'',}}>
   <article>
 
-  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -310,7 +330,7 @@ const YouTube = frontmatter.youtuber
 <section style={{ display:'',}}>
   <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek " style={{padding:'0 2rem',}}>
+      <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
 
 
           <h1 className="title1">{frontmatter.title}</h1>
@@ -329,7 +349,7 @@ const YouTube = frontmatter.youtuber
             dangerouslySetInnerHTML={{ __html: html }}
           />
   
-  
+  <br />
           <Link
             to={frontmatter.cta.ctaLink}
             // href="#scootch"
@@ -381,7 +401,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'100%', overflow:'', marginBottom:'2rem'}}>
+ <div className="flexcheek" style={{position:'relative', height:'88vh', overflow:'', marginBottom:'2rem', borderRadius:'0 0 12px 12px'}}>
  
  
 
@@ -395,7 +415,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
@@ -488,8 +508,8 @@ Through NFT
 
 
 
-<a name="posts" id="posts"></a>
-<div id="scooch">
+
+<div id="posts" name="posts">
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>

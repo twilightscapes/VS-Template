@@ -2895,14 +2895,14 @@ background-position:center 70px;
             } */
 
             /* @media (min-width: 48rem) {
-              #scooch:hover {
+              #posts:hover {
                 transform: scale(.96);
                 transition: all .8s ease-in-out;
                 margin-top:-10vh;
               }
               } */
 
-              #scooch {
+              #posts {
                 transform: scale(.92);
                 transition: all .8s ease-in-out;
               }
@@ -2910,7 +2910,7 @@ background-position:center 70px;
 
               @media (hover: hover) {
 
-                #scooch{
+                #posts{
                   /* transform: scale(1); */
                   transition: all .8s ease-in-out;
                 }

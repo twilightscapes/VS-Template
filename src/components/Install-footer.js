@@ -8,7 +8,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import CookieConsent from "react-cookie-consent"
 // import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 export default class Installer extends React.Component {
 
@@ -44,7 +44,7 @@ export default class Installer extends React.Component {
   One-Click Install - NO APP STORE NEEDED
 <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
       
-<button onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
+<button aria-label="Close this popup" onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
 
 <p style={{maxWidth:'', textAlign:'center'}}>Simply click the "install" icon in your browser address bar
 </p>
