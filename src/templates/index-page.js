@@ -24,7 +24,7 @@ const CustomBox = styled.div`
 
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String!, $limit: Int ) {
+  query HomeQuery($id: String! ) {
     
     site {
       siteMetadata {
@@ -35,7 +35,6 @@ export const pageQuery = graphql`
         image
         twitterUsername
         companyname
-        postcount
         showfooter
       }
 
@@ -92,7 +91,7 @@ export const pageQuery = graphql`
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: $limit
+      limit: 9
     ) {
       edges {
         node {
@@ -327,7 +326,7 @@ const YouTube = frontmatter.youtuber
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'', zIndex:'1',
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'0', zIndex:'1',
              objectFit:'contain', border:'0px solid red !important'}}
             />
             
@@ -392,13 +391,15 @@ const YouTube = frontmatter.youtuber
   <br />
           <Link
             to={frontmatter.cta.ctaLink}
-            // href="#scootch"
-            className="actionJackson txtshadow"
+            className="button fire actionJackson"
             style={{
               cursor:'pointer',
-              width:'90%',
-              margin:'0 auto'
-
+              width:'80%',
+              maxWidth:'600px',
+              margin:'0 auto',
+              display:'flex',
+              alignSelf:'center',
+              color:'#ccc'
             }}
           >
             {frontmatter.cta.ctaText}
@@ -441,13 +442,16 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'88vh', overflow:'', marginBottom:'2rem', borderRadius:'0 0 12px 12px'}}>
+      <div className="flexcheek" style={{position:'relative', maxHeight:'70vh', overflow:'', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
  
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'', overflow:'', position:'relative'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'70vh', overflow:'', position:'relative', display:'', justifyContent:'', alignItems:'', flexDirection:'column'}}>
    
+
+
+
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
            {SecondaryImage ? (
@@ -455,13 +459,20 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'80vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'70vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
           )}
 {/* </div> */}
 
+
+
+<ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
+  <Newsignup />
+  </div>
+</ScrollAnimation>
 
 
 {/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} >
@@ -521,14 +532,6 @@ Through NFT
 </h2>
 </ScrollAnimation> */}
 
-
-
-<ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'', display:'flex', justifyContent:'center'}}>
-<div style={{position:'', bottom:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'', borderRadius:'12px'}}>
-  <Newsignup />
-  </div>
-</ScrollAnimation>
-
 {/* <div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div> */}
 </div>
 
@@ -545,6 +548,7 @@ Through NFT
 </div>
 </article>
 </section>
+
 
 ) : (
   ""

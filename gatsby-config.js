@@ -14,7 +14,7 @@ const netlifyCmsPaths = {
 const settings = require("./src/util/site.json")
 
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: { FAST_DEV: true, PARALLEL_SOURCING: true },
   siteMetadata: settings.meta,
   plugins: [
     // {
@@ -208,7 +208,7 @@ module.exports = {
         lang: `en`,
         theme_color: `#222`,
         display: `standalone`,
- icon: `static/assets/vidsock-logo.svg`, // This path is relative to the root of the site.
+ icon: `static/assets/logo.svg`, // This path is relative to the root of the site.
  icon_options: {
   purpose: `any maskable`,
 },

@@ -2,9 +2,9 @@
 slug: /
 tagline: This is an example of a VidSock site
 featuredImage: /assets/Experiences-Header-8.jpg
-secondaryImage: /assets/transparent.png
+secondaryImage: /assets/night316.jpg
 underlayImage: /assets/PillowTalkBG.png
-showInfo: ""
+showInfo: true
 youtuber: "SD0EKkyuakY"
 youtubeautostart: "1"
 title: Welcome to VidSock!
@@ -14,7 +14,7 @@ cta:
   ctaText: See the Posts
   ctaLink: /#posts
 youtubeend: ""
-showFeature: true
+showFeature: ""
 youtubecontrols: ""
 template: index-page
 youtubemute: "1"
@@ -29,4 +29,3 @@ Of course, you as the owner of the VidSock, always have the option to view both 
 
 
 
-<!-- iHxmNzMfDj4 -->

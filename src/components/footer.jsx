@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-// import Theme from "../components/theme"
+import Theme from "../components/theme"
 import Consent from "../components/Consent"
 // import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
@@ -207,7 +207,7 @@ export function Footer() {
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button" style={{margin:'10px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Form</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Form</Link>
 
  <div >
      
@@ -233,7 +233,7 @@ export function Footer() {
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem', position:'relative', right:'', top:'10px'}}>
-{/* <Theme  style={{display:'flex', alignSelf:'center',}} /> */}
+<Theme  style={{display:'flex', alignSelf:'center',}} />
 
 <br />
 <br />
