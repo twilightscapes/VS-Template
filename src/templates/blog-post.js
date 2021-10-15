@@ -7,7 +7,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Countdown from 'react-countdown'
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
@@ -21,7 +21,7 @@ import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
 import TimeAgo from 'react-timeago'
 import styled from "styled-components"
-// import InnerImageZoom from 'react-inner-image-zoom'
+import InnerImageZoom from 'react-inner-image-zoom'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 const CustomBox = styled.div`
 @media (max-width: 48rem) {
@@ -404,21 +404,30 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div style={{display:'block', width:'100%', height:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:''}}>
+<div style={{display:'grid', placeContent:'center', width:'100vw', height:'100%', overflow:'', position:'absolute', top:'0', zIndex:'', }}>
+
+<div style={{margin:'0 auto', width:'100%', overflow:''}}>
 {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
-            />
+            // <GatsbyImageImage
+            //   image={Image}
+            //   alt={frontmatter.title + " - Featured image"}
+            //   className="featured-image1 layer1"
+            //   style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
+            // />
+            <InnerImageZoom src={getSrc(Image)} />
+
+
+            
             
           ) : (
 
-       
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
+       ""
+            // <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
+          </div>
+
+       
 </div>
 
 
