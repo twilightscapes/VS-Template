@@ -236,7 +236,7 @@ const YouTube = frontmatter.youtuber
     <CustomBox style={{}}>
     <Layout>
     <Helmet>
-  <body className="homepage vidsock" />
+  <body className="homepage vidsock triple" />
 </Helmet>
 {/* <Seo
           title={`VidSock - Video Multimedia NFT Platform`}
