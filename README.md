@@ -59,5 +59,5 @@ We really appreciate you taking time to build your website with our VidSock.
 [gatsby]: https://gatsbyjs.org
 [netlifycms]: https://www.netlifycms.org
 [vidsock]: https://vidsock.com
-[twitter]: https://twitter.com/vidsock
+[twitter]: https://twitter.com/vidsocks
 [custom-domain]: https://vidsock.com/adding-custom-domain-netlify
