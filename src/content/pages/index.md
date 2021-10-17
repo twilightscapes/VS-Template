@@ -8,7 +8,7 @@ showInfo: true
 youtuber: ""
 youtubeautostart: "1"
 title: Welcome to VidSock!
-svgImage: /assets/null.svg
+svgImage: /assets/MysteryScience3000.svg
 showPosts: true
 cta:
   ctaText: See the Posts
