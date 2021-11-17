@@ -4,10 +4,10 @@ title: Transcendence
 slug: /transcendence
 date: 2021-10-23 10:43
 description: A groovy animation floating through the cosmos
-youtuber: "1kIihY252eE"
-youtuber2: "mkYKF5hQQ6M"
-youtubeshoworiginal: "1"
-youtubersuggestion1: "https://youtu.be/ErvxEjDUO4s"
+youtuber: ""
+youtuber2: ""
+youtubeshoworiginal: ""
+youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
 youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
 youtubestart: ""
@@ -17,15 +17,15 @@ audiostart: "33"
 audioend: "3000"
 youtubecontrols: "0"
 youtubeautostart: "1"
-isnftforsale: "1"
+isnftforsale: ""
 svgzindex: "0"
-comments: "1"
-shareable: "1"
+comments: ""
+shareable: ""
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-6.jpg
-svgImage: /assets/transcendence.svg
+svgImage: /assets/null.svg
 nftlink: ""
-nftdrop: "2021-10-31T14:00:00"
+nftdrop: ""
 nftredeem: ""
 ---
 Shot in the Valley of the Gods in southern Utah, the original image is comprised of 72 photos shot during time-lapse and then stacked together to illustrate the movement of the earth.

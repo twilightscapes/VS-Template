@@ -285,13 +285,14 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
     
               <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
 
-              <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+              {/* <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object> */}
 
 
-      {/* <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'300px', height:'150px', maxWidth:'300px', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
+      <img className="homepage-bg1" src={iconimage} width="90%" height="" alt="VidSock" style={{ width:'', height:'', maxWidth:'',  background:'transparent !important',}} />
+      <br /><br />
     </div>
           
-              <div style={{width:'', margin:'0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem', background:'linear-gradient(180deg, #eee 30%, #2FBFE8 80%)', borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
+              <div style={{width:'', margin:'2rem auto 0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem', background:'linear-gradient(180deg, #eee 30%, #2FBFE8 80%)', borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
       {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
               </div>
               </button>}
@@ -454,7 +455,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -462,17 +463,17 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div style={{display:'grid', placeContent:'center', width:'100vw', height:'100%', overflow:'', position:'absolute', top:'0', zIndex:'', }}>
+<div style={{display:'grid', placeContent:'top', width:'100vw', height:'100%', overflow:'', position:'absolute', top:'0', zIndex:'', }}>
 
-<div style={{margin:'0 auto', width:'100%', overflow:''}}>
+
 {Image ? (
             // <GatsbyImageImage
-            //   image={Image}
+            //   image={getSrc(Image)}
             //   alt={frontmatter.title + " - Featured image"}
             //   className="featured-image1 layer1"
             //   style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
             // />
-            <InnerImageZoom src={getSrc(Image)} />
+            <InnerImageZoom src={getSrc(Image)}  />
 
 
             
@@ -483,7 +484,7 @@ const { iconimage } = useSiteMetadata()
             // <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
-          </div>
+
 
        
 </div>

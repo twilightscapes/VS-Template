@@ -5,25 +5,28 @@ slug: /VidSockPlatform
 date: 2021-08-15 10:43
 description: Learn More About The VidSock Platform
 youtuber: ""
-youtubestart: ""
-youtubeend: ""
-youtubemute: "1"
-youtubecontrols: "0"
+youtuber2: ""
 youtubeshoworiginal: ""
 youtubersuggestion1: ""
-youtubersuggestion2: ""
-youtubersuggestion3: ""
+youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
+youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
+youtubestart: ""
+youtubeend: ""
+youtubemute: ""
+audiostart: "33"
+audioend: "3000"
+youtubecontrols: "0"
+youtubeautostart: "1"
+isnftforsale: ""
+svgzindex: "0"
 comments: ""
 shareable: ""
-isnftforsale: ""
+underlayImage: /assets/transparent.png
+featuredImage: /assets/vidsock-explain1.jpg
+svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
-featuredImage: /assets/vidsock-explain2.jpg
-underlayImage: /assets/transparent.png
-youtubeautostart: "1"
-svgImage: /assets/null.svg
-svgzindex: ""
 ---
 
 <h2 style="font-size:150%">About the VidSock Platform</h2>

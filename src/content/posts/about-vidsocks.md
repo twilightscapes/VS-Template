@@ -1,32 +1,29 @@
 ---
 template: blog-post
-title: Television Signals
-slug: /tv-signals
-date: 2021-11-08 01:43
-description: What's on tonight, let's check the boob tube
-youtuber: "https://youtu.be/QsDJIZwzjVA"
-youtuber2: "https://youtu.be/rRNhQ0MSAeY"
-youtubeshoworiginal: "1"
-youtubersuggestion1: "https://youtu.be/7vz43MYaCA0"
-youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
-youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
+title: What Are VidSocks?
+slug: /whatarevidsocks
+date: 2021-08-14 10:43
+description: Learn More About VidSocks
+youtuber: ""
 youtubestart: ""
 youtubeend: ""
 youtubemute: "1"
-audiostart: "304"
-audioend: "5000"
 youtubecontrols: "0"
-youtubeautostart: "1"
-isnftforsale: "1"
-svgzindex: "0"
+youtubeshoworiginal: ""
+youtubersuggestion1: ""
+youtubersuggestion2: ""
+youtubersuggestion3: ""
 comments: ""
-shareable: "1"
-underlayImage: /assets/transparent.png
-featuredImage: /assets/television-signals-promo.jpg
-svgImage: /assets/movie-night.svg
+shareable: ""
+isnftforsale: ""
 nftlink: ""
-nftdrop: "2021-10-31T14:00:00"
-nftredeem:
+nftdrop: ""
+nftredeem: ""
+featuredImage: /assets/vidsock-explain1.jpg
+underlayImage: /assets/transparent.png
+youtubeautostart: "1"
+svgImage: /assets/null.svg
+svgzindex: ""
 ---
 <h2 style="font-size:150%">What are VidSocks?</h2>
 VidSocks are layered multimedia (including animation, cutouts, scenes, and video) crafted together to give the viewer a whole new sensory experience.
