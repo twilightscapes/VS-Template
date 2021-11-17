@@ -1,7 +1,7 @@
 ---
 slug: /
 tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud=based web apps available today.
-featuredImage: /assets/transparent.png
+featuredImage: /assets/Experiences-Header-6.jpg
 secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
 showInfo: true

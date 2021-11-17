@@ -10,7 +10,6 @@ import "../styles/variables.css"
 import "../styles/global.css"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import "../assets/scss/style.scss"
-import "../styles/user.css"
 export function Layout({ children }) {
   const { iconimage } = useSiteMetadata()
 
