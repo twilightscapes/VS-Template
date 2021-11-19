@@ -1,13 +1,13 @@
 ---
 slug: /
-tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud=based web apps available today.
+tagline: I cant. I just have No Fuckin Time
 featuredImage: /assets/Experiences-Header-6.jpg
 secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
-showInfo: true
+showInfo: ""
 youtuber: ""
 youtubeautostart: "1"
-title: Welcome to VidSocks!
+title: I don't have time for that because I have
 svgImage: /assets/null.svg
 showPosts: true
 cta:
