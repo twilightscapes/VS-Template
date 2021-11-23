@@ -200,10 +200,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `web app`,
-        short_name: `app`,
+        name: `No Fuckin Time`,
+        short_name: `NFT`,
         start_url: `/?user_mode=app`,
-        description: `web app`,
+        description: `No Fuckin Time - web app`,
         background_color: `#222`,
         lang: `en`,
         theme_color: `#222`,
