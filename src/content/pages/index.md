@@ -1,7 +1,7 @@
 ---
 slug: /
 tagline: Next-Gen Multimedia Websites & Web Apps
-featuredImage: /assets/trtansparent.jpg
+featuredImage: /assets/default-og-image.jpg
 secondaryImage: /assets/icon-512x512.png
 underlayImage: /assets/transparent.png
 showInfo: true
