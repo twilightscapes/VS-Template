@@ -2,7 +2,7 @@ import * as React from "react"
 import { Layout } from "../components/layout"
 // import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-
+import { Footer } from "../components/footer"
 import GoBack from "../components/goBack"
 
 
@@ -69,7 +69,7 @@ not a transfer of title, and under this license you may not:
 
     </section>
     
-    
+    <Footer />
     </Layout>
 
   )

@@ -5,6 +5,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
+import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
@@ -167,7 +168,7 @@ const HomePage = ({ data }) => {
 function AddSvg(){
   const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
   return (
-    <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
+    <object title="VidSocks Rock" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="VidSocks Rock" ></object>
   )
 }
 
@@ -585,7 +586,7 @@ Through NFT
       
 
 
-
+<Footer />
 
     </Layout>
     </CustomBox>

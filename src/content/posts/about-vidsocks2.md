@@ -2,7 +2,7 @@
 template: blog-post
 title: About The VidSock Platform
 slug: /VidSockPlatform
-date: 2021-08-15 10:43
+date: 2021-08-12 10:43
 description: Learn More About The VidSock Platform
 youtuber: ""
 youtuber2: ""
@@ -22,7 +22,7 @@ svgzindex: "0"
 comments: ""
 shareable: ""
 underlayImage: /assets/transparent.png
-featuredImage: /assets/vidsock-explain1.jpg
+featuredImage: /assets/vidsock-explain2.jpg
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: ""

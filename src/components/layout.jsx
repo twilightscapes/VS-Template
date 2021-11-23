@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Footer } from "./footer"
 import { Seo } from "./seo"
 import '@fontsource/roboto'
 import { Link } from 'gatsby-plugin-modal-routing-3'
@@ -115,7 +114,7 @@ About
       
 
 
-      <Footer />
+
       
       </>
 

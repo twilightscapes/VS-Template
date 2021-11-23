@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-
+import { Footer } from "../components/footer"
 
 import GoBack from "../components/goBack"
 
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
           </div>
     </section>
     
-    
+    <Footer />
     </Layout>
 
   )

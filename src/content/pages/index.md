@@ -1,8 +1,8 @@
 ---
 slug: /
-tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud=based web apps available today.
-featuredImage: /assets/Experiences-Header-6.jpg
-secondaryImage: /assets/transparent.png
+tagline: Next-Gen Multimedia Websites & Web Apps
+featuredImage: /assets/trtansparent.jpg
+secondaryImage: /assets/icon-512x512.png
 underlayImage: /assets/transparent.png
 showInfo: true
 youtuber: ""
@@ -14,23 +14,20 @@ cta:
   ctaText: See the Posts
   ctaLink: /#posts
 youtubeend: ""
-showFeature: ""
+showFeature: "1"
 youtubecontrols: ""
 template: index-page
 youtubemute: "1"
 svgzindex: ""
 youtubestart: ""
 ---
-<h2 style="font-weight:bold; font-size:125%;">What are VidSocks?</h2>
-<br />
-VidSocks are state-of-the-art web apps that feature custom layered multimedia (animation, cutout-photos, video, and audio) crafted together to give the viewer a whole new sensory experience.
+<h3 class="" style="color:; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;">
+A complete website/app platform with multimedia blog and customizable home page, about and contact pages with integrated contact forms. </h3>
 
-<h3 style="font-weight:bold; font-size:115%; margin:1rem 0; text-align:center"> Built for artists, photographers, musicians, clubs &amp; restaurants and any other small businesses</h3>
+<h3 class="" style="color:; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses.
+</h3>
 
- Have a <strong>BIG</strong> presence on the web. VidSocks are designed to give every advantage in <em>maximize your artwork, reduce load times and increase SEO results</em>. <br />
-
- <div style="text-align:center; text-decoration:underline"><a href="/about/">Check out the full list of VidSocks features</a></div>
- <br />
-
-
-
+<blockquote>
+<p>VidSocks produce top-notch SEO-minded content that ranks incredibly well in Google page rankings. It has everything! Social Media sites auto import Website previews with descriptions. It makes things SO easy, just click to share!</p>
+<div style="text-align:right; padding-right:20%;"> – Satisfied VidSock User</div>
+</blockquote>
