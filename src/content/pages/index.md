@@ -4,10 +4,10 @@ tagline: Next-Gen Multimedia Websites & Web Apps
 featuredImage: /assets/default-og-image.jpg
 secondaryImage: /assets/icon-512x512.png
 underlayImage: /assets/transparent.png
-showInfo: true
+showInfo: ""
 youtuber: ""
 youtubeautostart: "1"
-title: Welcome to VidSocks!
+title: I don't have time for that because I have
 svgImage: /assets/null.svg
 showPosts: true
 cta:
