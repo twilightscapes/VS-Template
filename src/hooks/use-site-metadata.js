@@ -15,6 +15,9 @@ export const useSiteMetadata = () => {
           companyname
           comments
           showfooter
+          menu1
+          menu2
+          menu3
           }
         }
       }
