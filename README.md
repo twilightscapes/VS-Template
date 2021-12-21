@@ -16,12 +16,12 @@
 - Customize content of Homepage, About and Contact page.
 - Add / Modify / Delete blog posts.
 - Edit website settings, Add Google Analytics change colors, settings, logos, etc all from  within the CMS.
-- SEO Optimized
+- SEO Optimized (100 scores on LightHouse)
 - Social media icons
 - OpenGraph structured data
 - Twitter Cards meta
 - XML Sitemaps
-- Netlify Contact Form, Works right out of the box after deployment.
+- Netlify Contact and Newsletter Forms
 
 
 
@@ -45,15 +45,10 @@ You can select any existing post or page to start editing or add a **New Post**.
 
 You can find all the website settings such website Site title, Website URL, Google anlaytics etc,.. in your Netlify CMS `Admin > Settings > General`
 
-## 🌐 Adding Custom domain to netlify website
-
-We have written a short article on [Custom domain with Netlify website](custom-domain)
-
-
 
 ## 🙏 Thank you
 
-We really appreciate you taking time to build your website with our VidSock.
+We really appreciate you choosing to build your website with VidSocks!
 
 
 [gatsby]: https://gatsbyjs.org
