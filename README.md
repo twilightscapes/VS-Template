@@ -6,6 +6,12 @@
 
 # VidSocks
 
+A complete website/app platform with multimedia blog and customizable home page, about and contact pages with integrated contact forms.
+
+Built for artists, photographers, musicians, clubs & restaurants and other small businesses.
+
+VIDSOCKS OPERATE FOR FREE
+using FREE Cloud Based Services
 
 ## 👌 Features
 
