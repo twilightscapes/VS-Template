@@ -192,13 +192,6 @@ const YouTube = frontmatter.youtuber
       <ReactPlayer
       className='react-player66'
       url={Url}
-      
-      // url={[
-      //   iframeUrl,
-      //   YoutuberSuggestion1,
-      //   YoutuberSuggestion2,
-      //   YoutuberSuggestion3
-      // ]}
       width="100%"
       height="100%"
  
@@ -210,21 +203,6 @@ const YouTube = frontmatter.youtuber
       loop
       playing
       playsinline
-//       playIcon={
-//         <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-
-//     <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
-      
-
-//       <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-// <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-// </div>
-  
-//       <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-// <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-//       </div>
-//       </button>}
-//         light="../assets/transparent.png"
       />
     )
   }
@@ -239,21 +217,12 @@ const YouTube = frontmatter.youtuber
     <Helmet>
   <body className="homepage vidsock triple" />
 </Helmet>
-{/* <Seo
-          title={`VidSock - Video Multimedia NFT Platform`}
-          description={`Create, display and market your NFTs with VidSock`}
-          image={'https://vidsock.com/default-og-image.jpg'}
-        /> */}
        <Seo
         title={frontmatter.title}
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-  //       image={photoUrl}
-  //  photoUrl
-
    image={ siteUrl + getSrc(frontmatter.featuredImage) }
-
       />
       
       
@@ -412,30 +381,8 @@ const YouTube = frontmatter.youtuber
             
           </Link>
 
-         
-
-
-{/* <AnchorLink 
-className="actionJackson txtshadow"
-style={{
-  cursor:'pointer',
-  width:'70%',
-  margin:'0 auto'
-
-}} 
-to="#experiences" title="See the new EXPERIENCES™" /> */}
-
-
-
 <br />
 <br />
-{/* <span className="actionJackson txtshadow"> <span className="icon -right">
-              <FaHandPointDown />
-            </span> &nbsp;&nbsp;All New EXPERIENCES &nbsp;&nbsp;<span className="icon -right">
-              <FaHandPointDown />
-            </span></span> */}
-          
-
 
       </div>
 
@@ -455,7 +402,6 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-{/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
            {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
@@ -466,7 +412,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
           ) : (
             ""
           )}
-{/* </div> */}
+
 
 
 
@@ -476,76 +422,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
   </div>
 </ScrollAnimation>
 
-
-{/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} >
-<div style={{position:'relative', top:'0px', paddingRight:'', border:'0px solid yellow', zIndex:'0'}}>
-  <h2
-  className="title1 txtshadow-header"
-  style={{
-
-
-   position: 'relative',
-    textAlign: 'center', 
-    float: 'none',
-    margin:'1rem 0 0 0',
-    padding:'0',
-  }}
->
-Only Available<br />
-Through NFT
-</h2>
 </div>
-</ScrollAnimation> */}
-
-
-{/* <ScrollAnimation animateIn="bounceInRight" delay={400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red', zIndex:'0'}}>
-<h2
-  className="letter narrow txtshadow mobile-txt"
-  style={{
-   fontSize:'40px',
-   color: 'white',
-   position: 'relative',
-    textAlign: 'right', 
-    margin:'0',
-    padding:'0',
-  }}
->
-  into the
-</h2>
-</ScrollAnimation> */}
-
-
-{/* <ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'0'}}>
-<h2
-  className="letter narrow txtshadow mobile-txt"
-  style={{
-   fontSize:'80px',
-   color: 'white',
-   position: 'relative',
-   fontWeight:'bold',
-//            top: '230px',
-    textAlign: 'right',
-    textTransform: 'uppercase', 
-    margin:'0',
-    padding:'0',
-  }}
->
-  Night
-</h2>
-</ScrollAnimation> */}
-
-{/* <div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div> */}
-</div>
-
-      
-      
-
-
-
-
-
-
-
       </div> 
 </div>
 </article>

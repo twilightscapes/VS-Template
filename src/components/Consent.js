@@ -41,9 +41,9 @@ const Consent = () => (
     expires={364}
     cookieName="site-pref-cookie"
 >
-<ScrollAnimation animateIn="shakeY" delay={150} offset={0}  initiallyVisible={false} animateOnce={false} animatePreScroll={false} style={{ display:'flex', alignItems:'center', zIndex:'1', width:'100%',}}>
+{/* <ScrollAnimation animateIn="shakeY" delay={150} offset={0}  initiallyVisible={false} animateOnce={false} animatePreScroll={false} style={{ display:'flex', alignItems:'center', zIndex:'1', width:'100%',}}>
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', position:'absolute', top:'-80px', left:'32vw', margin:'0 auto', color:'#fff', }} />
-</ScrollAnimation>
+</ScrollAnimation> */}
 
     <div style={{color:'inherit', padding:'1rem', fontSize:'100%', textAlign:'center',}}>
      We use cookies to optimize our website.{" "}<br />
