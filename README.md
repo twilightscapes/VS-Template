@@ -10,6 +10,11 @@
 ## 👌 Features
 
 - Next-Gen Blogging Platform.
+- State-of-the-art multimdedia/animation layering
+- FULL animated SVG support
+- User-installable PWA (Progressive Web Apps)
+- Built-in commenting, social sharing, and interactive video system
+- Full support for NFT sale and promotion
 - Responsive Web Design
 - Dark / Light Mode
 - Customize theme color and all site aspects from CMS
