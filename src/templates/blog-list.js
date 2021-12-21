@@ -17,7 +17,7 @@ import { Layout } from "../components/layout"
 
 
 // import { Slide } from 'react-slideshow-image'
-import 'react-slideshow-image/dist/styles.css'
+// import 'react-slideshow-image/dist/styles.css'
 
 
 // import Gall1 from '../components/gallery1'

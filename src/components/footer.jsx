@@ -3,7 +3,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import ScrollAnimation from 'react-animate-on-scroll'
 
 import Consent from "../components/Consent"
-// import Install from "../components/Install-footer"
+import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
 // import { FaHandPointDown } from "react-icons/fa"
 
@@ -208,19 +208,19 @@ export function Footer() {
 
     <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'2rem', position:'relative', zIndex:'1'}}>
 
-    {/* <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', position:'absolute', top:'-80px', margin:'1rem auto', color:'#fff',}} /> */}
+    
     <Consent />
 
     
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Form</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px auto 2rem auto', textDecoration:'none', maxWidth:'200px'}}>Got Questions?</Link>
 
 
 
         
-        {/* <Install /> */}
+        <Install />
  <div >
      
 

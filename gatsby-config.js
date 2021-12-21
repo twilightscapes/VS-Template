@@ -1,4 +1,4 @@
-// require("dotenv").config()
+require("dotenv").config()
 /**
  * Configure your Gatsby site with this file.
  *
@@ -14,7 +14,7 @@ const netlifyCmsPaths = {
 const settings = require("./src/util/site.json")
 
 module.exports = {
-  flags: { FAST_DEV: true, PARALLEL_SOURCING: true },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: settings.meta,
   plugins: [
     // {
@@ -41,6 +41,15 @@ module.exports = {
       ],
     },
   },
+
+  {
+    resolve: "gatsby-plugin-anchor-links",
+    options: {
+      offset: -100,
+      duration: 2000,
+    }
+  },
+
 
 
 
@@ -126,43 +135,10 @@ module.exports = {
             }
           },
           
-          {
-            resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
-            options: {
-              // Fields to index
-              fields: [`title`, `template`, `slug`],
-              // How to resolve each field`s value for a supported node type
-              resolvers: {
-                // For any node of type MarkdownRemark, list how to resolve the fields` values
-                MarkdownRemark: {
-                  template: node => node.frontmatter.template,
-                  title: node => node.frontmatter.title,
-                  slug: node => node.frontmatter.slug,
-                },
-              },
-              // Optional filter to limit indexed nodes
-              filter: (node, getNode) => node.frontmatter.tags !== "exempt",
-            },
-          },
-          `gatsby-remark-responsive-iframe`,
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: "language-",
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-              // By default the HTML entities <>&'" are escaped.
-              // Add additional HTML escapes by providing a mapping
-              // of HTML entities and their escape value IE: { '}': '&#123;' }
-              escapeEntities: {},
-            },
-          },
         ],
       },
     },
-    `gatsby-plugin-sass`,
+    `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
     {
@@ -177,6 +153,16 @@ module.exports = {
       },
     },
 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/img/`, // wherever background images are stored
+      },
+    },
+ 
+
+
 
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -186,6 +172,7 @@ module.exports = {
         ],
       },
     },
+
     
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
@@ -198,12 +185,29 @@ module.exports = {
 
     `gatsby-plugin-sitemap`,
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://vidsock.com',
+        sitemap: 'https://vidsock.com/sitemap.xml',
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', allow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `No Fuckin Time`,
-        short_name: `NFT`,
-        start_url: `/?user_mode=app`,
-        description: `No Fuckin Time - web app`,
+        name: `VidSocks`,
+        short_name: `VidSocks`,
+        start_url: `/support?user_mode=app`,
+        id: "/support?user_mode=app",
+        description: `VidSocks`,
         background_color: `#222`,
         lang: `en`,
         theme_color: `#222`,
