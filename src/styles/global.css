@@ -43,6 +43,9 @@ body.homepage, body.bloglist {
 
     #SRLLightbox button{border-radius:12px !important;}
 
+    #menuicon:after{
+      content: " MENU ";
+    }
 
 /* External Links */
 a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after {
@@ -1878,7 +1881,6 @@ border:1px solid #222;
     
     }
 
-
       body.homepage footer{background: rgba(0,0,0,0.75);}
 
 
@@ -2279,10 +2281,10 @@ background: rgba(0,0,0,0.6);
 
               @media (hover: hover) {
 
-                #posts{
-                  /* transform: scale(1); */
-                  /* transition: all .8s ease-in-out; */
-                }
+                /* #posts{
+                  transform: scale(1);
+                  transition: all .8s ease-in-out;
+                } */
 
 
                 .container2:hover, .container2:active { 
