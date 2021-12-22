@@ -239,19 +239,15 @@ export function Footer() {
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
 
-<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem', position:'relative', right:'', top:'10px'}}>
+
 
 
 <br />
 <br />
 
-</div>
-
-<div style={{position:'absolute', bottom:'0', display:'', justifyContent:'center', alignSelf:'', alignContent:'', margin:'0 auto', width:'100%', left:'0', right:'0'}}>
 
 
 
-</div>
 
       </nav>
    

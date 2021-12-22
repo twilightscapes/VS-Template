@@ -202,25 +202,14 @@ export function Layout({ children }) {
 </header>
 
 
-<div className="usability" style={{ display:'flex', alignSelf:'center', flexDirection:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', justifyContent:'center'}}>
+<div className="usability" style={{ display:'flex', flexDirection:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', margin:'0 auto', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
 {/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
 
-  <div style={{ display:'flex', gap:'20px', justifyContent:'space-around', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0',}}>
-    
+  <div style={{ display:'', gap:'', justifyContent:'', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0', width:'200px', margin:'0 auto'}}>
   {/* <button type="button" className="" onClick={toggleVisible} style={{wordWrap:'normal', color:'#fff'}}>
   <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
 </button> */}
-
-
-
-<Theme  style={{display:'flex', alignSelf:'center', color:'#fff'}} />
-
-
-  
-
-    
-    {/* <a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a> */}
-    
+<Theme  style={{}} />
     </div>
 
   </div>
