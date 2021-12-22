@@ -9,7 +9,7 @@ showInfo: "1"
 youtuber: ""
 youtubeautostart: "1"
 title: Welcome to my world
-svgImage: /assets/null.svg
+svgImage: ""
 showPosts: true
 cta:
   ctaText: See the Posts
