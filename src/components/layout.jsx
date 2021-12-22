@@ -202,7 +202,13 @@ export function Layout({ children }) {
 </header>
 
 
-<div className="usability" style={{ display:'flex', flexDirection:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', margin:'0 auto', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
+
+
+
+
+
+        {children}
+        <div className="usability" style={{ display:'flex', flexDirection:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', margin:'0 auto', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
 {/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
 
   <div style={{ display:'', gap:'', justifyContent:'', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0', width:'200px', margin:'0 auto'}}>
@@ -213,12 +219,6 @@ export function Layout({ children }) {
     </div>
 
   </div>
-
-
-
-
-        {children}
-
       
         
   </>
