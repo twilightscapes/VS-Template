@@ -13,11 +13,11 @@
     "comments": "5732401321869312-proj",
     "title": "VidSocks",
     "showfooter": true,
+    "font1": "Roboto",
     "menu1": "Contact Us",
     "menu2": "About VidSocks",
     "menu3": "VIEW EXAMPLES",
     "menu1url": "",
-    "font": "Roboto",
     "image": "/assets/default-og-image.jpg",
     "description": "VidSocks - Next-Gen Blog Platform",
     "icon512": "/assets/icon-512x512.png"

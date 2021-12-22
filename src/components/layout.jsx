@@ -63,9 +63,9 @@ export function Layout({ children }) {
   const { menu1 } = useSiteMetadata()
   // const { menu2 } = useSiteMetadata()
   const { menu3 } = useSiteMetadata()
-  const { font } = useSiteMetadata();
+  const { font1 } = useSiteMetadata()
 
-  const fontUrl = "https://fonts.googleapis.com/css?family=" + font + ""
+  const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=swap"
 
   // const [isVisible, setIsVisible] = useState(false);
   // const toggleVisible = () => {
@@ -76,16 +76,23 @@ export function Layout({ children }) {
 <CustomBox style={{}}>
 <>
 <Helmet>
-{ !font ? (
-    <link id="yyy" rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" /> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+
+{ !font1 ? (
+  
+  ""
 
   ) : (
-    <link id="xxx" rel="stylesheet"
+
+    
+    <link id="yyy" rel="stylesheet"
           href={fontUrl} />
   )} 
-
 </Helmet>
+
+
 
       <Seo />
 

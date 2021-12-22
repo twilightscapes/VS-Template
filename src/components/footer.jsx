@@ -26,12 +26,7 @@ import {
 import { FaWordpress, FaVk } from "react-icons/fa"
 import { Link } from "gatsby"
 
-import {
-  footerStyle,
-  // links,
-  blurb,
-  // logos,
-} from "./footer.module.css"
+
 
 
 
@@ -206,13 +201,13 @@ export function Footer() {
 
 {/* </ScrollAnimation> */}
 
-    <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'2rem', position:'relative', zIndex:'1'}}>
+    <footer className="footerstyle" style={{padding:'1rem 0', marginTop:'2rem', position:'relative', zIndex:'1', display:'flex', flexDirection:'column'}}>
 
     
     <Consent />
 
     
-      <div className={blurb}>
+      <div className="">
 
 
         <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px auto 2rem auto', textDecoration:'none', maxWidth:'200px'}}>Got Questions?</Link>

@@ -39,14 +39,14 @@ export default class Installer extends React.Component {
 
 {this.state.isActive ? 
 <>
-  <div className="installwindow" style={{fontSize:'90%',  display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'600px', textAlign:'center' }}>
+  <div className="installwindow" style={{fontSize:'90%',  display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'500px', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'600px', textAlign:'center' }}>
   
   
 <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
       
 <button aria-label="Close this popup" onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
 
-<p className="" style={{maxWidth:'', textAlign:'center', fontSize:'160%'}}>One-Click Install - NO APP STORE NEEDED</p>
+{/* <p className="" style={{maxWidth:'', textAlign:'center', fontSize:'160%'}}>One-Click Install - NO APP STORE NEEDED</p> */}
 
 <p className="" style={{maxWidth:'', textAlign:'center', fontSize:'150%'}}>Simply click the "install" icon<br /> in your browser address bar
 </p>
@@ -73,6 +73,7 @@ export default class Installer extends React.Component {
    
    <div style={{width:'100%'}}>2) &nbsp; Press 'Add to Home Screen'</div>
    </div>
+   <br /> 
    <a href="/support/" className="" style={{textDecoration:'underline'}}>You can also visit the Support Portal</a>
    </div>
 

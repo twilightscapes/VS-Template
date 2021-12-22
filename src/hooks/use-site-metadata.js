@@ -18,6 +18,7 @@ export const useSiteMetadata = () => {
           menu1
           menu2
           menu3
+          font1
           }
         }
       }
