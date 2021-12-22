@@ -210,7 +210,7 @@ export function Footer() {
       <div className="">
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px auto 2rem auto', textDecoration:'none', maxWidth:'250px', fontSize:'120%', textAlign:'center' }}>Got Questions?</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'20px auto 2rem auto', textDecoration:'none', maxWidth:'250px', fontSize:'120%', textAlign:'center' }}>Got Questions?</Link>
 
 
 
