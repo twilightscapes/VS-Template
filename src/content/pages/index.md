@@ -1,13 +1,14 @@
 ---
 slug: /
 tagline: Next-Gen Multimedia Websites & Web Apps
+description: "VidSocks - Next-Gen Blog Platform"
 featuredImage: /assets/default-og-image.jpg
 secondaryImage: /assets/icon-512x512.png
 underlayImage: /assets/transparent.png
 showInfo: "1"
 youtuber: ""
 youtubeautostart: "1"
-title: Welcome to VidSocks
+title: Welcome to my world
 svgImage: /assets/null.svg
 showPosts: true
 cta:

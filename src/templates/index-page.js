@@ -104,6 +104,7 @@ export const pageQuery = graphql`
             slug
             title
             nftdrop
+            nftdrop
   
             
             featuredImage {
@@ -152,6 +153,7 @@ const HomePage = ({ data }) => {
     const ShowFeature = frontmatter.showFeature
     const ShowInfo = frontmatter.showInfo
     const ShowPosts = frontmatter.showPosts
+
 
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
@@ -228,7 +230,7 @@ const YouTube = frontmatter.youtuber
       
 
 
-
+      
 
         <div name="container21" className="container21" style={{height:'',}}>
 
