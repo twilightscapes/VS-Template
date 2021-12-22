@@ -947,7 +947,7 @@ font-size: 1.2rem;
 }
 
 
-.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .back,.ReactModalPortal .usability{
+.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .back, .ReactModalPortal .usability{
 display: none !important;
 
 }

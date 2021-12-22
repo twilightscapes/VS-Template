@@ -8,6 +8,10 @@ import React, { } from "react"
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
 import Theme from "../components/theme"
 import { Seo } from "./seo"
+import "../styles/reset.css"
+// import "../styles/variables.css"
+import "../styles/global.css"
+// import "../assets/scss/style.scss"
 // import LogoText from "../../static/assets/logotext.svg"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
@@ -15,10 +19,7 @@ import { AiOutlineClose } from "react-icons/ai"
 // import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
 // import Bug from "../../static/assets/icon-512x512.png"
-import "../styles/reset.css"
-// import "../styles/variables.css"
-import "../styles/global.css"
-// import "../assets/scss/style.scss"
+
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
