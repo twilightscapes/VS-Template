@@ -5,8 +5,8 @@ const theme = {
   colors: {
     ...defaultColors,
     text: "#111",
-    background: "#fff",
-    primary: "var(--primary)",
+    background: "#ccc",
+    primary: "var(--primary-color)",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",
     cardBg: "linear-gradient(180deg, #333 1%, #111 80%)",
@@ -22,8 +22,8 @@ const theme = {
     modes: {
       dark: {
         text: "#f5f5f5",
-        background: "#222",
-        primary: "var(--primary)",
+        background: "#111",
+        primary: "var(--primary-color)",
         accent: "#5C2941",
         muted: "rgba(255, 255, 255, 0.7)",
         cardBg: "linear-gradient(180deg, #333 1%, #ff0000 80%)",

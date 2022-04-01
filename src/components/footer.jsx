@@ -1,11 +1,11 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-// import ScrollAnimation from 'react-animate-on-scroll'
-
+// import GoBack from "../components/goBack"
+import Theme from "../components/theme"
 import Consent from "../components/Consent"
-import Install from "../components/Install-footer"
+// import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
-// import { FaHandPointDown } from "react-icons/fa"
+
 
 import {
   RiFacebookBoxFill,
@@ -24,9 +24,15 @@ import {
   RiBehanceFill,
 } from "react-icons/ri"
 import { FaWordpress, FaVk } from "react-icons/fa"
+
+
 import { Link } from "gatsby"
-
-
+// import {
+//   footerStyle,
+//   // links,
+//   blurb,
+//   // logos,
+// } from "./footer.module.css"
 
 
 
@@ -167,7 +173,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 export function Footer() {
   // const { siteUrl } = useSiteMetadata();
-  // const { menu1 } = useSiteMetadata();
+
   // const speedIt = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=" + siteUrl + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
 
 
@@ -176,9 +182,6 @@ export function Footer() {
 
 
   const { companyname } = useSiteMetadata()
- 
-
-
   const { showfooter } = useSiteMetadata()
 
 
@@ -191,73 +194,72 @@ export function Footer() {
 
 
     showfooter ? (
-  
-<>
+  <>
+<Consent />
 
 
-{/* <ScrollAnimation className="" animateIn="fadeIn" delay={50} initiallyVisible={false} animateOnce={false} animatePreScroll={false}> */}
+      <footer className="" style={{display:'flex', flexDirection:'column', padding:'1rem 0', marginTop:'0', position:'relative'}}>
 
-{/* <ScrollAnimation className="" animateIn="bounce" delay={10} initiallyVisible={true} animateOnce={false} animatePreScroll={true}> */}
+   
+<br />
 
-{/* </ScrollAnimation> */}
-
-    <footer className="footerstyle" style={{padding:'1rem 0', marginTop:'2rem', position:'relative', zIndex:'1', display:'flex', flexDirection:'column'}}>
-
+    {/* <Install /> */}
+<br />
     
-    <Consent />
-
-    
-      <div className="">
-
-
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'20px auto 2rem auto', textDecoration:'none', maxWidth:'250px', fontSize:'120%', textAlign:'center' }}>Got Questions?</Link>
+      {/* <div className="" style={{textAlign:'center'}}>
+      <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw'}}>Request Quote</Link>
+ </div> */}
 
 
-
-        
-        <Install />
- <div >
      
 
         { !sIcons ? (
     ""
 
   ) : (
-    <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', alignItems:'center'}}>
-       <div className="socialtext" style={{fontSize:'14px',}}>Social<br />Links</div> {sIcons}
+    <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', alignItems:'center', margin:'3rem 0'}}>
+       <div className="socialtext" style={{fontSize:'14px',}}>We're<br />Social</div> {sIcons}
         </div>
   )}
   
         
-        </div>
+      
 
         
-      </div>
+
       <nav className="footerlinks" aria-label="footer">
-      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Use</Link></div>
+      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link state={{modal: true}}  to="/disclaimer/">Disclaimer</Link>  |  <Link state={{modal: true}}  to="/privacy/">Privacy Policy</Link>  |  <Link state={{modal: true}}  to="/cookie-policy/">Cookie Policy</Link></div>
   
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
 
+<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem', position:'relative', right:'', top:'10px'}}>
+<Theme  style={{display:'flex', alignSelf:'center',}} />
+
+<br />
+<br />
+
+{/* <a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a> */}
+
+</div>
 
 
 
 <br />
 <br />
-
-
-
-
-
+{/* <GoBack /> */}
       </nav>
    
     </footer>
-    {/* </ScrollAnimation> */}
+
 </>
     ) : (
       ""
     )
 
+
+
+   
 
 
     

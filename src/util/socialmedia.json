@@ -2,19 +2,11 @@
   "socialIcons": [
     {
       "icon": "facebook",
-      "url": "https://facebook.com/"
+      "url": "https://www.facebook.com/therackhouse/"
     },
     {
       "icon": "instagram",
-      "url": "https://www.instagram.com/"
-    },
-    {
-      "icon": "youtube",
-      "url": "https://www.youtube.com/"
-    },
-    {
-      "icon": "twitter",
-      "url": "https://twitter.com/"
+      "url": "https://www.instagram.com/explore/tags/rackhouse/"
     }
   ]
 }

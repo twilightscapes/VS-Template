@@ -60,12 +60,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   // Create blog-list pages
-  const postsPerPage = 9
+  const postsPerPage = 6
   const numPages = Math.ceil(blogPostsCount / postsPerPage)
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/posts/` : `/posts/${i + 1}`,
+      path: i === 0 ? `/minutes/` : `/minutes/${i + 1}`,
       component: blogList,
       context: {
         limit: postsPerPage,
@@ -86,18 +86,5 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     })
-  }
-}
-
-exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
-  if (stage === 'build-javascript') {
-    const config = getConfig()
-    const miniCssExtractPlugin = config.plugins.find(
-      plugin => plugin.constructor.name === 'MiniCssExtractPlugin'
-    )
-    if (miniCssExtractPlugin) {
-      miniCssExtractPlugin.options.ignoreOrder = true
-    }
-    actions.replaceWebpackConfig(config)
   }
 }

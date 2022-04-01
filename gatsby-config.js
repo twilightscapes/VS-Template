@@ -14,17 +14,17 @@ const netlifyCmsPaths = {
 const settings = require("./src/util/site.json")
 
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  // flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: settings.meta,
   plugins: [
     // {
     //   resolve: "gatsby-source-shopify",
     //   options: {
-    //     apiKey: process.env.SHOPIFY_API_KEY,
+    //     // apiKey: process.env.SHOPIFY_API_KEY,
     //     password: process.env.SHOPIFY_SHOP_PASSWORD,
     //     storeUrl: process.env.GATSBY_SHOPIFY_STORE_URL,
     //     shopifyConnections: ["collections"],
-    //     salesChannel:"secure3",
+    //     salesChannel:"Secure3",
     //   },
     // },
 
@@ -42,16 +42,25 @@ module.exports = {
     },
   },
 
+  
+
+  {
+    resolve: "gatsby-plugin-web-font-loader",
+    options: {
+      custom: {
+        families: ['LibreBaskerville'],
+        urls: ['/assets/fonts/fonts.css'],
+      },
+    },
+  },
+
   {
     resolve: "gatsby-plugin-anchor-links",
     options: {
       offset: -100,
-      duration: 2000,
+      duration: 1000,
     }
   },
-
-
-
 
     {
       resolve: "gatsby-plugin-react-svg",
@@ -135,43 +144,62 @@ module.exports = {
             }
           },
           
+
+          `gatsby-remark-responsive-iframe`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              // By default the HTML entities <>&'" are escaped.
+              // Add additional HTML escapes by providing a mapping
+              // of HTML entities and their escape value IE: { '}': '&#123;' }
+              escapeEntities: {},
+            },
+          },
         ],
       },
     },
-    `gatsby-remark-responsive-iframe`,
+    // 'gatsby-plugin-sharp-exif',
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-theme-ui",
+    `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-netlify`,
+
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
         modulePath: ``, // default: undefined
         enableIdentityWidget: true,
         publicPath: `admin`,
-        htmlTitle: `VidSock CMS`,
-        htmlFavicon: `src/img/vidsock-logo.svg`,
+        htmlTitle: `All in 60 CMS`,
+        htmlFavicon: `static/icons/manifest-icon-192.png`,
         includeRobots: false,
+        logo_url: 'https://twilightscapes.com/assets/tw-logo-white.svg'
       },
     },
 
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `backgrounds`,
-        path: `${__dirname}/src/img/`, // wherever background images are stored
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `backgrounds`,
+    //     path: `${__dirname}/src/img/front/`, 
+    //   },
+    // },
+
+
  
-
-
-
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          settings.ga, // Google Analytics / GA
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-gtag`,
+    //   options: {
+    //     trackingIds: [
+    //       settings.ga,
+    //     ],
+    //   },
+    // },
 
     
     // {
@@ -181,14 +209,13 @@ module.exports = {
     //   },
     // },
 
-
-
+    
     `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://vidsock.com',
-        sitemap: 'https://vidsock.com/sitemap.xml',
+        host: 'https://rackhouse.netlify.app',
+        sitemap: 'https://rackhouse.netlify.app/sitemap.xml',
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {
@@ -203,13 +230,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `VidSocks`,
-        short_name: `VidSocks`,
-        start_url: `/support?user_mode=app`,
-        description: `VidSocks`,
-        background_color: `#222`,
+        name: `The Rack House Steaks & Spirits`,
+        short_name: `RackHouse`,
+        start_url: `/?user_mode=app`,
+        description: `The Rack House`,
+        background_color: `#111`,
         lang: `en`,
-        theme_color: `#222`,
+        theme_color: `#111`,
         display: `standalone`,
  icon: `static/assets/logo.svg`, // This path is relative to the root of the site.
  icon_options: {
@@ -217,12 +244,12 @@ module.exports = {
 },
       icons: [
         {
-          src: `static/assets/icon-192x192.png`,
+          src: `/static/siteimages/manifest-icon-192.png`,
           sizes: `192x192`,
           type: `image/png`,
         },
         {
-          src: `static/assets/icon-512x512.png`,
+          src: `/static/siteimages/manifest-icon-512.png`,
           sizes: `512x512`,
           type: `image/png`,
         },

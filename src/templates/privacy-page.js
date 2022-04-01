@@ -45,11 +45,11 @@ const Privacy = ({ data }) => {
 
 
       <GoBack />
+      {/* <br />
       <br />
       <br />
       <br />
-      <br />
-      <Footer />
+      <Footer /> */}
     </Layout>
   )
 }

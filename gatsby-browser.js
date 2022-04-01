@@ -1,5 +1,11 @@
 // import * as React from "react"
 // import { StoreProvider } from "./src/context/store-context"
+import "./src/assets/scss/reset.scss"
+import "./src/assets/scss/global.scss"
+import "./src/styles/styles.css"
+
+
+// import SimpleReactLightbox from 'simple-react-lightbox'
 
 
 
@@ -8,6 +14,9 @@
   
 //   <StoreProvider>{element}</StoreProvider>
 // )
+
+
+
 
 export const onInitialClientRender = () => {
   setTimeout(function() {
@@ -18,7 +27,7 @@ export const onInitialClientRender = () => {
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
-    `This website has been updated since your last visit. ` +
+    `This application has been updated. ` +
       `Reload to display the latest version?`
   )
 
@@ -26,8 +35,5 @@ export const onServiceWorkerUpdateReady = () => {
     window.location.reload()
   }
 }
-
-
-
 
 

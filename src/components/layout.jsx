@@ -1,230 +1,239 @@
 import React, { } from "react"
-// import { SkipNavLink } from "./skip-nav"
-// import { Header } from "./header"
-// import { Footer } from "./footer"
-// import { IoHandLeft } from "react-icons/io5"
-// import { FaRegPlusSquare } from 'react-icons/fa';
-// import { IoShareOutline } from 'react-icons/io5';
-// import { AiOutlineCloseCircle } from 'react-icons/ai';
-import Theme from "../components/theme"
 import { Seo } from "./seo"
-import "../styles/reset.css"
-// import "../styles/variables.css"
-import "../styles/global.css"
-// import "../assets/scss/style.scss"
-// import LogoText from "../../static/assets/logotext.svg"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 // import { AnchorLink } from "gatsby-plugin-anchor-links"
-// import { FaHandPointDown } from "react-icons/fa"
-// import Bug from "../../static/assets/icon-512x512.png"
+// import { StoreContext } from "../context/store-context"
+// import { Toast } from "./toast"
+import Bug from "../../static/assets/logo.svg"
+import Logo from "../../static/assets/logo.svg"
 
-// import { FiShare } from 'react-icons/fi';
-// import { FaRegPlusSquare } from 'react-icons/fa';
-// import Fullscreen from "../components/FullScreen"
-// import Menu from "../components/menu1"
+// import { CartButton } from "./cart-button"
+// import SearchIcon from "../../static/assets/search"
+import Theme from "../components/theme"
 
+// import { Link } from "gatsby-plugin-anchor-links"
+// import { StaticImage } from "gatsby-plugin-image"
 
-// import '@fontsource/roboto'
-
-// import Audio from '../assets/audio.mp3'
-// import TouchUp from '../components/TouchUp'
-// import { IoMdFingerPrint } from 'react-icons/io'
-
-// import Consent from './Consent'
-import { useSiteMetadata } from "../hooks/use-site-metadata"
-// 
-// import { BiLeftArrow } from "react-icons/bi"
-import { navigate } from "gatsby";
-import styled from "styled-components"
-import { Helmet } from "react-helmet"
-import { StaticImage } from "gatsby-plugin-image"
-
-
-
-
-
-
+// import Install from './install-discount'
+// import { navigate } from "gatsby";
 
 export function Layout({ children }) {
 
-  
+  // const { iconimage } = useSiteMetadata()
+  // const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
-  const CustomBox = styled.div`
+  // const items = checkout ? checkout.lineItems : []
 
- 
-
-
-
-
-`
-
-  const { iconimage } = useSiteMetadata()
-  const { menu1 } = useSiteMetadata()
-  // const { menu2 } = useSiteMetadata()
-  const { menu3 } = useSiteMetadata()
-  const { font1 } = useSiteMetadata()
-
-  const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=swap"
-
-  // const [isVisible, setIsVisible] = useState(false);
-  // const toggleVisible = () => {
-  //   setIsVisible(!isVisible);
-  // };
+  // const quantity = items.reduce((total, item) => {
+  //   return total + item.quantity
+  // }, 0)
 
   return (
-<CustomBox style={{}}>
+    <div style={{display:''}}> 
 <>
-<Helmet>
+<Seo />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" /> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
-
-{ !font1 ? (
-  
-  ""
-
+<ModalRoutingContext.Consumer closeTimeoutMS={300} >
+{({ modal, closeTo }) => (
+<div style={{overflow:''}}>
+  {modal ? (
+    <>
+    <div style={{display:'', position:'fixed', top:'50px', right:'50px', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'55 !important', filter:' drop-shadow(0px 4px 3px #000)', color:'#fff'}}>
+    <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'#fff', cursor:'pointer'}}>
+      <AiOutlineClose />
+      {/* <span className="TRON">[</span> */}
+      
+      {/* <span className="" style={{fontSize:'70%', textAlign:'center'}}>home</span> */}
+    </Link>
+    </div>
+    </>
   ) : (
+''
+  )}
 
-    
-    <link id="yyy" rel="stylesheet"
-          href={fontUrl} />
-  )} 
-</Helmet>
-
-
-
-      <Seo />
-
-
-      <ModalRoutingContext.Consumer>
-    {({ modal, closeTo }) => (
-      <div style={{overflow:''}}>
-        {modal ? (
-          <>
-          <div style={{position:'fixed', top:'0', right:'0', padding:'10px', fontSize:'40px', background:'#111 !important', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
-          <Link state={{noScroll: true }} to={closeTo} style={{color:'#fff'}}>
-            <AiOutlineClose />
-          </Link>
-          </div>
-          </>
-        ) : (
-""
-        )}
-
-      </div>
-    )}
-  </ModalRoutingContext.Consumer>
+</div>
+)}
+</ModalRoutingContext.Consumer>
 
 
 
-  
-{/* <header name="pagetop" className={isVisible ? 'left' : ''} > */}
-<header name="pagetop" className="">
+
+
+
+<header id="top" name="pagetop" style={{}} >
+
+{/* <ul id="menu" className="menu" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center', background:'radial-gradient(#111 14%,#222 140%)', color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center'}}>  
+<li className="grad" style={{position:'relative',}}>
+        <AnchorLink className="navbar-item" to="/#about" style={{paddingRight:'',}}>
+          About <span className="mobilehide">Us</span> 
+        </AnchorLink>
+        </li>
+      <li className="grad" style={{position:'relative',}}>
+      <AnchorLink className="navbar-item" to="/#capabilities" style={{paddingRight:'',}}>
+      <span className="mobilehide">Our</span> Capabilities 
+      </AnchorLink>
+      </li>
+      <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
+      <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'1px solid'}}  aria-label="Link to Home" title="Back to Home">
+      <SiteLogo style={{maxHeight:'60px'}} />
+      </AnchorLink>
+    </li>
+      <li className="grad" style={{position:'relative',}}>
+        <AnchorLink className="navbar-item" to="/#industries" style={{paddingRight:'',}}>
+          Industries <span className="mobilehide">Served</span> 
+        </AnchorLink>
+        </li>
+        <li className="grad" style={{position:'relative',}}>
+        <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
+          Contact <span className="mobilehide">Us</span>
+        </AnchorLink>
+        </li>
+      </ul> */}
+
+
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 
-  <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
-<StaticImage className="" src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} /></div>
+<div id="secondMenu" className="" style={{marginTop:'5rem'}}>
+<ul className="sidebarMenuInner post-card" style={{}}>
+{/* <Install /> */}
+{/* <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
+Woot
+</li>
+<li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
+This is 2nd menu
+</li> */}
+
+</ul>
+</div>
+
+<>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
+  <label htmlFor="openSidebarMenu" className="backdrop1" ><input type="checkbox" /></label>
+
+<label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
+{/* <img className="" src={iconimage} alt="Logo" style={{borderRadius:'12px'}} /> */}
+<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'block' }}/> 
+{/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="Animated Logo" title="Animated Logo" >Animated Logo</object> */}
+</div>
   </label>
 
-  {/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle popped">
-<div className="spinner diagonal part-1"></div>
-    <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div>
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000'}}>MENU</div>
-  </label> */}
+  
+  {/* <Install /> */}
 
 
- <label aria-label="Background clicks close menu" id="menubgcloser" htmlFor="openSidebarMenu" className="backdrop1" ></label>
 
- <div id="sidebarMenu" className="" style={{minWidth:'', width:''}}>
+
+   <div id="sidebarMenu" style={{minWidth:'', width:'',}}>
+  
+{/* <div className="no-app promocode">
+30% OFF CODE: <span style={{color:'var(--primary-color)', fontWeight:'bold'}}>LoveTheNight</span>
+</div> */}
+
   
 
-  <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'', display:'', justifyContent:''}}>
+    <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
-     {/* <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
- </li> */}
- <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-
- {/* <Link to="/">
-<img src={iconimage} alt="Logo" width="100%" height="100%" />
-</Link> */}
-
-<Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
-
-{/* <img src={iconimage} alt="Logo" width="100%" height="100%" /> */}
-
-
-{/* <Link to="/">
-<StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" width="100%" height="100%" />
-</Link> */}
-
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
-{/* <Link to="/">
-<LogoText style={{width:'100%', height:''}} />
-</Link> */}
+    <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
+    <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'150px', border:'0px solid'}}></Link>
+<Logo />
  </li>
 
 
 
-  <li className="carto no-app" style={{textAlign:'center'}}>
- <Link className="navbar-item txtshadow" to="/contact/">
- {menu1}
-</Link>
+
+
+
+
+
+
+
+
+
+{/* <li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
+              <Link className="navbar-item txtshadow" to="/about/">
+
+              About Us
+
+              </Link>
+      </li>  */}
+
+
+
+<li className="carto" style={{textAlign:'', pointerEvents:''}}>
+      <Link className="navbar-item txtshadow" to="/minutes/">
+
+      Latest Posts
+
+        </Link>
 </li>
 
-{/* <li className="carto no-app" style={{textAlign:'center'}}>
- <Link className="navbar-item txtshadow" to="/about/">
- {menu2}
-</Link>
+<li className="carto" style={{textAlign:'', pointerEvents:''}}>
+      <Link className="navbar-item txtshadow" to="/minutes/">
+
+      Archived Posts
+
+        </Link>
+</li>
+
+
+
+{/* <li className="carto" style={{textAlign:'', pointerEvents:''}}>
+      <Link state={{modal: true}} className="navbar-item txtshadow" to="/contact/">
+
+      Contact Us
+
+        </Link>
 </li> */}
 
-      <li className="carto" style={{textAlign:'center', paddingTop:'1rem'}}>
-              <Link title="Examples" className="navbar-item txtshadow neonText" to="/posts/">
-              {menu3}
-              </Link>
-      </li>
 
- 
-      <li className="carta">
-      <div style={{display:'flex', justifyContent:'center'}}>
-<button className="back" onClick={()=>navigate(-1)} style={{padding:'4px 8px', borderRadius:'12px'}}>
-        {" "} Continue Choosing 
-</button>
-</div>
-      </li>
+
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
+  
+      <Theme  style={{padding:'0'}} />
+   {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
+    <span className="carto"><SearchIcon /></span>
+   </Link>
    
-</ul>
-    </div>
-</header>
+   <CartButton quantity={quantity} /> */}
 
 
+        </li>
 
-
-
-
-
-        {children}
-        <div className="usability" style={{ display:'flex', flexDirection:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', margin:'0 auto', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
-{/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
-
-  <div style={{ display:'', gap:'', justifyContent:'', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0', width:'200px', margin:'0 auto'}}>
-  {/* <button type="button" className="" onClick={toggleVisible} style={{wordWrap:'normal', color:'#fff'}}>
-  <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
-</button> */}
-<Theme  style={{}} />
-    </div>
+    </ul>
 
   </div>
+
+      {/* <Toast show={loading || didJustAddToCart} >
+        {!didJustAddToCart ? (
+          "Updating…"
+        ) : (
+          <>
+            Added to cart{" "}
+            <div style={{fontSize:'30px', marginLeft:'10px'}}><ImArrowRight /></div>
+          </>
+        )}
+      </Toast> */}
+ 
+      {/* <Link to="/search" style={{display:'flex', verticalAlign:'center', marginTop:'12px', marginRight:'20px'}}>
+    <span><SearchIcon /></span>
+   </Link>
+
+  <div style={{marginTop:'5px'}}><CartButton quantity={quantity} /></div> */}
+     
+</header>
+{children}
+
       
-        
-  </>
-  </CustomBox>
+      
+      {/* <Consent /> */}
+     {/* <Install /> */}
+      {/* <Footer /> */}
+      
+      </>
+    </div>
+    
   )
 }
-
-

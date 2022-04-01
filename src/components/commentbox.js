@@ -11,25 +11,15 @@ const ComBox = ()=>{
       textColor: "#222",  // default black
        subtextColor: "#222",  // default grey
    })
-  },[comments])
+  })
 
   return(
 
-    comments ? (
-      <div className="commentbox" />
 
-    ) : (
-      ""
-    )
-
-
-    
+    <div className="commentbox" />
 
   )
 
 }
   
   export default ComBox
-
-
-  

@@ -13,7 +13,7 @@ Built for artists, photographers, musicians, clubs & restaurants and other small
 VIDSOCKS OPERATE FOR FREE
 using FREE Cloud Based Services
 
-## 👌 Features
+## Features
 
 - Next-Gen Blogging Platform.
 - State-of-the-art multimdedia/animation layering

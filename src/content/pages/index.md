@@ -1,34 +1,32 @@
 ---
 slug: /
-tagline: Next-Gen Multimedia Websites & Web Apps
-description: "VidSocks - Next-Gen Blog Platform"
+tagline: "All in 60 Seconds"
+description: "All in 60 Seconds"
 featuredImage: /assets/default-og-image.jpg
-secondaryImage: /assets/icon-512x512.png
+secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
-showInfo: "1"
-youtuber: ""
+showInfo: true
+youtuber: "https://youtu.be/JOMipAq7ZSk"
 youtubeautostart: "1"
-title: Welcome to my world
-svgImage: ""
+youtubeloop: ""
+title: All In 60
+svgImage: /assets/null.svg
 showPosts: true
 cta:
-  ctaText: See the Posts
-  ctaLink: /#posts
+  ctaText: Request Quote
+  ctaLink: /contact/
 youtubeend: ""
-showFeature: "1"
+showFeature: true
+nftredeem: ""
 youtubecontrols: ""
 template: index-page
 youtubemute: "1"
 svgzindex: ""
 youtubestart: ""
 ---
-<h3 class="" style="color:; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;">
-A complete website/app platform with multimedia blog and customizable home page, about and contact pages with integrated contact forms. </h3>
 
-<h3 class="" style="color:; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses.
-</h3>
+<p>Awesomely powerful template for video blogs and other multimedia based websites</p>
 
-<blockquote>
-<p>VidSocks produce top-notch SEO-minded content that ranks incredibly well in Google page rankings. It has everything! Social Media sites auto import Website previews with descriptions. It makes things SO easy, just click to share!</p>
-<div style="text-align:right; padding-right:20%;"> – Satisfied VidSock User</div>
-</blockquote>
+<p>Let All In 60 assist you with bringing your product to market.</p>
+
+<!-- https://youtu.be/JOMipAq7ZSk -->

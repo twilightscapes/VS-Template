@@ -13,8 +13,7 @@ const Thanks = () => (
       style={{
         textAlign: "center",
         width:'80%',
-        margin:'0 auto',
-        minHeight:'100vh'
+        margin:'0 auto'
       }}
     >
 <div className="spacer33"></div> 
@@ -26,20 +25,14 @@ const Thanks = () => (
           textAlign:'center'
         }}
       />
-      <h1 className="headline1" style={{fontSize:'200%'}}>Got your message</h1>
-      {/* <p>I should respond shortly, depending on where I am at.</p> */}
+      <h1 className="neonText" style={{fontSize:'200%'}}>Success!</h1>
+      <p>We will respond to your inquire as soon as possible.</p>
       <div className="spacer33"></div> 
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
-        Lets go back to Homepage
+        Back to Homepage
       </Link>
     </div>
-
-
-
-
-
-
     <div className="spacer33"></div> 
     {/* <div className="spacer66"></div>  */}
   </Layout>

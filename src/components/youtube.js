@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 // import { ProductListing } from "../components/product-listing"
 // import GoBack from "../components/goBack"
@@ -8,11 +8,11 @@ import styled from "styled-components"
 // import { StaticImage } from "gatsby-plugin-image"
 // import { Helmet } from "react-helmet"
 // import { Seo } from "../components/seo"
-// import { FaRegPlusSquare } from 'react-icons/fa';
-// import { IoShareOutline } from 'react-icons/io5';
-// import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { FaRegPlusSquare } from 'react-icons/fa';
+import { IoShareOutline } from 'react-icons/io5';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
-// import { ImPlay } from "react-icons/im"
+import { ImPlay } from "react-icons/im"
 // import { RiSendPlane2Line } from "react-icons/ri"
 // import Install from "../components/install-discount"
 // import SVG from "../../static/assets/crude-addiction.svg"
@@ -32,7 +32,14 @@ const CustomBox = styled.div`
 
 
 
+// const CustomButton = (props) => {
+// 	return (
 
+
+// <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={props.FinalUrl} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
+
+// 	)
+// }
 
 
         
@@ -90,13 +97,29 @@ const CustomBox = styled.div`
                 
 
                 <ReactPlayer
-  className='react-player66'
+  className='react-player'
       url={FinalUrl}
       width='100%'
       height='100%'
+      shownfo={false}
+      controls={false}
+      autoplay={true}
       playing
       fullscreen
       color="white"
+      muted={true}
+      // playIcon={<button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'10', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
+        
+
+      //   <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+      //   <div style={{ textAlign:'center', fontSize:'30px'}}>
+      //      Ads Removed!</div>
+      // <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      // <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+      
+      // </div>
+      // </button>}
+      // light="../static/assets/transparent.png"
     />
 
               )
@@ -133,7 +156,7 @@ const CustomBox = styled.div`
 
 <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
       
-    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'15', position:'relative', bottom:'40vh',transition:' all 0.85s', animation:'fade .8s forwards'}}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'15', position:'relative', bottom:'40vh',transition:' all 0.85s', animation:'fade .8s forwards'}}>
 
 <p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
